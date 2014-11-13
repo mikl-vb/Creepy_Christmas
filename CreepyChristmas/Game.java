@@ -42,7 +42,9 @@ public class Game
          floor7, floor8, floor9, floor10, elevator, dungeon;
       
         // create the rooms
-        floor1 = new StartingRoom("1st floor of the terrifying candycane");
+        floor1 = new StartingRoom("The door closes after you walk in and " +
+            "there are no exits. \n Grab the coal, sleigh bells, or milk and cookies" +
+            "\n Commands: grab...coal, sleigh bells, milk and cookies");
         floor2 = new Room("The second floor");
         floor3 = new Room("The third floor");
         floor4 = new Room("The fourth floor");
@@ -176,8 +178,8 @@ public class Game
      */
     private void printHelp() 
     {
-        System.out.println("You are lost. You are alone. You wander");
-        System.out.println("around at the university.");
+        System.out.println("...");
+        System.out.println("Print Help...");
         System.out.println();
         System.out.println("Your command words are:");
         parser.showCommands();
