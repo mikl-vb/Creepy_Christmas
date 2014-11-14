@@ -57,6 +57,7 @@ public class Game
         floor1 = new StartingRoom("The door closes after you walk in and " +
             "there are no exits. \n Grab the coal, sleigh bells, or milk and cookies" +
             "\n Commands: grab...coal, sleigh bells, milk and cookies");
+<<<<<<< HEAD
         floor2 = new Room("Floor: 2");
         floor3 = new Room("Floor: 3");
         floor4 = new Room("Floor: 4");
@@ -67,6 +68,18 @@ public class Game
         floor9 = new Room("Floor: 9");
         floor10 = new Room("Floor: 10...The Top...");
         elevator = new Room("The elevator... \n You take the elevator to the 5th floor.");
+=======
+        floor2 = new Room("The second floor");
+        floor3 = new Room("The third floor");
+        floor4 = new Room("The fourth floor");
+        floor5 = new Room("The fifth floor");
+        floor6 = new Room("The sixth floor");
+        floor7 = new Room("The seventh floor");
+        floor8 = new Room("The eighth floor");
+        floor9 = new Room("The ninth floor");
+        floor10 = new Room("The top floor");
+        elevator = new Room("The elevator");
+>>>>>>> FETCH_HEAD
         dungeon = new Room("The dungeon");
         
         // initialise room exits
