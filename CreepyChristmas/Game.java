@@ -120,7 +120,7 @@ public class Game
         }
         System.out.println("Thank you for playing.  Good bye.");
     }
-    public void playWithFileInput() 
+    public void playWithFileInput1() 
     {            
         printWelcome();
         // Enter the main command loop.  Here we repeatedly read commands and
@@ -128,7 +128,33 @@ public class Game
                 
         boolean finished = false;
         while (! finished) {
-            Command command = parserWithFileInput.getCommand();
+            Command command = parserWithFileInput.getCommandForCommands1();
+            finished = processCommand(command);
+        }
+        System.out.println("Thank you for playing.  Good bye.");
+    }
+    public void playWithFileInput2() 
+    {            
+        printWelcome();
+        // Enter the main command loop.  Here we repeatedly read commands and
+        // execute them until the game is over.
+                
+        boolean finished = false;
+        while (! finished) {
+            Command command = parserWithFileInput.getCommandForCommands2();
+            finished = processCommand(command);
+        }
+        System.out.println("Thank you for playing.  Good bye.");
+    }
+    public void playWithFileInput3() 
+    {            
+        printWelcome();
+        // Enter the main command loop.  Here we repeatedly read commands and
+        // execute them until the game is over.
+                
+        boolean finished = false;
+        while (! finished) {
+            Command command = parserWithFileInput.getCommandForCommands3();
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
