@@ -28,6 +28,7 @@ public class StartingRoom extends Room
             setExit("down", dungeon);
            // dungeon.setExit("forward", Game.setRoom(elevator));
             dungeon.setExit("up", this);
+            dungeon.setExit("forward",Game.elevator);
             changeDescription("You are in the starting room." +
                 "  \nAn opening in the wall reveals a staircase leading down.");
         }

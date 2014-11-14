@@ -22,6 +22,7 @@ public class Game
     private Parser parser;
     private ParserWithFileInput parserWithFileInput;
     public Room currentRoom;
+    public static Room elevator;
     
     private PlayerHealth health;
     private int thisHealth;
@@ -50,7 +51,7 @@ public class Game
     private void createRooms()
     {
         Room floor1, floor2, floor3, floor4, floor5, floor6, 
-         floor7, floor8, floor9, floor10, elevator, dungeon;
+         floor7, floor8, floor9, floor10, dungeon;
       
         // create the rooms
         floor1 = new StartingRoom("The door closes after you walk in and " +
