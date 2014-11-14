@@ -1,0 +1,10 @@
+
+grab coal
+go forward
+go forward
+go upstairs
+go upstairs
+go upstairs
+go upstairs
+go upstairs
+
