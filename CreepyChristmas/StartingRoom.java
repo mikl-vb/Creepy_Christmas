@@ -22,8 +22,7 @@ public class StartingRoom extends Room
     public void grab(Command command)
     {
         if(command.getSecondWord().equals("coal")){
-            System.out.println("You press the button and part of the wall " +
-                "slides open revealing a staircase.");
+            System.out.println("");
             Room dungeon = new Room("You fall into in a dark and dusty dungeon. " +
                 "\n There is a hidden elevator with an open door. " + 
                 "\n Walk inside if you dare.");
