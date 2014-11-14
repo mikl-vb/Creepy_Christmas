@@ -31,7 +31,7 @@ public class ParserWithFileInput
     {
         commands = new CommandWords();
         //reader = new Scanner(System.in);
-        fileReader = new ReadFile("GuidedTourCommands.txt");
+        fileReader = new ReadFile("GuidedTourCommands1.txt");
         
     }
 
