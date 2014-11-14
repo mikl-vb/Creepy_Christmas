@@ -203,6 +203,15 @@ public class Game
             wantToQuit = quit(command);
         }
         else if(commandWord.equals("grab")){
+            if(command.getSecondWord().equals("bells")){
+                System.out.println("You grabbed the sleigh bells.");
+
+                //need to make them die and start over
+                System.out.println("You DIED...");
+                
+                wantToQuit = true;
+                return wantToQuit;
+            }
             currentRoom.grab(command);
             System.out.println(currentRoom.getLongDescription());
         }
