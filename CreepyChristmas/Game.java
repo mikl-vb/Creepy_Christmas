@@ -21,8 +21,9 @@ public class Game
 {
     private Parser parser;
     private ParserWithFileInput parserWithFileInput;
-    public Room currentRoom;
+    public static Room currentRoom;
     public static Room elevator;
+    public static Room floor2;
     
     private PlayerHealth health;
     private int thisHealth;
@@ -50,28 +51,27 @@ public class Game
      */
     private void createRooms()
     {
-        Room floor1, floor2, floor3, floor4, floor5, floor6, 
+        Room floor1, floor3, floor4, floor5, floor6, 
          floor7, floor8, floor9, floor10, dungeon;
       
         // create the rooms
         floor1 = new StartingRoom("The door closes after you walk in and " +
-            "there are no exits. \n Grab the coal, sleigh bells, or milk and cookies" +
-            "\n Commands: grab...coal, sleigh bells, milk and cookies");
-        floor2 = new Room("The second floor");
-        floor3 = new Room("The third floor");
-        floor4 = new Room("The fourth floor");
-        floor5 = new Room("The fifth floor");
-        floor6 = new Room("The sixth floor");
-        floor7 = new Room("The seventh floor");
-        floor8 = new Room("The eigth floor");
-        floor9 = new Room("The ninth floor");
-        floor10 = new Room("The top floor");
-        elevator = new Room("The elevator");
-        dungeon = new Room("The dungeon");
+            "there are no exits. \n Grab the coal, sleigh bells, or milk" +
+            "\n Commands: grab... coal, bells, or  milk");
+        floor2 = new Room("Floor: 2");
+        floor3 = new Room("Floor: 3");
+        floor4 = new Room("Floor: 4");
+        floor5 = new Room("Floor: 5");
+        floor6 = new Room("Floor: 6");
+        floor7 = new Room("Floor: 7");
+        floor8 = new Room("Floor: 8");
+        floor9 = new Room("Floor: 9");
+        floor10 = new Room("Floor: 10...The Top...");
+        elevator = new Room("The elevator... \n You take the elevator to the 5th floor.");
+        
         
         // initialise room exits
 
-        floor2.setExit("downstairs", floor1);
         floor2.setExit("upstairs", floor3);
 
         floor3.setExit("downstairs", floor2);
@@ -97,7 +97,7 @@ public class Game
        
         floor10.setExit("downstairs", floor9);
         
-        elevator.setExit("outside", floor5);
+        elevator.setExit("forward", floor5);
         
         currentRoom = floor1;  // start game on first floor
         

@@ -22,29 +22,31 @@ public class StartingRoom extends Room
     public void grab(Command command)
     {
         if(command.getSecondWord().equals("coal")){
-            System.out.println("You press the button and part of the wall " +
-                "slides open revealing a staircase.");
-            Room dungeon = new Room("You are now in a dark and dusty dungeon");
-            setExit("down", dungeon);
-           // dungeon.setExit("forward", Game.setRoom(elevator));
-            dungeon.setExit("up", this);
+            System.out.println("");
+            Room dungeon = new Room("You fall into in a dark and dusty dungeon. " +
+                "\n There is a hidden elevator with an open door. " + 
+                "\n Walk inside if you dare.");
+            
+            Game.currentRoom = dungeon;
+            
             dungeon.setExit("forward",Game.elevator);
-            changeDescription("You are in the starting room." +
-                "  \nAn opening in the wall reveals a staircase leading down.");
+            changeDescription("***Change description...?***");
         }
         else{
             if(command.getSecondWord().equals("bells")){
                 System.out.println("You grabbed the sleigh bells.");
 
                 //need to make them die and start over
+                System.out.println("You DIED...");
 
             }
             else{
                 if(command.getSecondWord().equals("milk")){
-                    System.out.println("You grabbed the milk and cookies.");
+                    System.out.println("You grabbed the milk and cookies." +
+                    "\n You have teleported to the second floor.");
 
-                    //teleport to second floor
-                    //currentRoom = floor2;
+                    Game.currentRoom = Game.floor2;
+                   
 
                 }
                 else{
