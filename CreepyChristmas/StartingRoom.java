@@ -30,7 +30,7 @@ public class StartingRoom extends Room
             Game.currentRoom = dungeon;
             
             dungeon.setExit("forward",Game.elevator);
-            changeDescription("Change description");
+            changeDescription("***Change description...?***");
         }
         else{
             if(command.getSecondWord().equals("bells")){
@@ -42,10 +42,11 @@ public class StartingRoom extends Room
             }
             else{
                 if(command.getSecondWord().equals("milk")){
-                    System.out.println("You grabbed the milk and cookies.");
+                    System.out.println("You grabbed the milk and cookies." +
+                    "\n You have teleported to the second floor.");
 
-                    //teleport to second floor
-                    //currentRoom = floor2;
+                    Game.currentRoom = Game.floor2;
+                   
 
                 }
                 else{
