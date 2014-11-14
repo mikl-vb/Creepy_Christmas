@@ -21,17 +21,28 @@ public class Game
 {
     private Parser parser;
     private ParserWithFileInput parserWithFileInput;
-    private Room currentRoom;
+    public Room currentRoom;
+    
+    private PlayerHealth health;
+    private int thisHealth;
         
     /**
      * Create the game and initialise its internal map.
      */
     public Game() 
     {
+        
         createRooms();
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
+        
+
+        
+        health = new PlayerHealth();
+        
+        
     }
+
 
     /**
      * Create all the rooms and link their exits together.
@@ -87,11 +98,10 @@ public class Game
         
         elevator.setExit("outside", floor5);
         
-        dungeon.setExit("forward", elevator);
-
         currentRoom = floor1;  // start game on first floor
+        
     }
-
+    
     /**
      *  Main play routine.  Loops until end of play.
      */
@@ -137,6 +147,10 @@ public class Game
         System.out.println(currentRoom.getLongDescription());
     }
 
+    public void setRoom(Room pRoom){
+        currentRoom = pRoom;
+    }
+    
     /**
      * Given a command, process (that is: execute) the command.
      * @param command The command to be processed.
@@ -226,4 +240,12 @@ public class Game
             return true;  // signal that we want to quit
         }
     }
+    /**
+     * 
+     * private void healthDamage(){
+     *   health = thisHealth - 1;
+     *   System.out.println("Health Damage");
+     *  }
+     * 
+     */
 }
