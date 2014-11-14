@@ -63,7 +63,7 @@ public class Game
         floor5 = new Room("The fifth floor");
         floor6 = new Room("The sixth floor");
         floor7 = new Room("The seventh floor");
-        floor8 = new Room("The eigth floor");
+        floor8 = new Room("The eighth floor");
         floor9 = new Room("The ninth floor");
         floor10 = new Room("The top floor");
         elevator = new Room("The elevator");
