@@ -25,6 +25,7 @@ public class Game
     public static Room elevator;
     public static Room floor2;
     
+    
     private PlayerHealth health;
     private int thisHealth;
         
@@ -125,32 +126,37 @@ public class Game
         printWelcome();
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
-                
+          
         boolean finished = false;
         while (! finished) {
             Command command = parserWithFileInput.getCommandForCommands1();
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
-    }
+      
+}
     public void playWithFileInput2() 
     {            
         printWelcome();
+        
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
-                
+        
         boolean finished = false;
         while (! finished) {
             Command command = parserWithFileInput.getCommandForCommands2();
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
+        
     }
     public void playWithFileInput3() 
     {            
         printWelcome();
+        
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
+        
                 
         boolean finished = false;
         while (! finished) {
@@ -158,6 +164,7 @@ public class Game
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
+        
     }
     /**
      * Print out the opening message for the player.
@@ -266,7 +273,7 @@ public class Game
      * whether we really quit the game.
      * @return true, if this command quits the game, false otherwise.
      */
-    private boolean quit(Command command) 
+    public boolean quit(Command command) 
     {
         if(command.hasSecondWord()) {
             System.out.println("Quit what?");
@@ -276,6 +283,8 @@ public class Game
             return true;  // signal that we want to quit
         }
     }
+    
+
     /**
      * 
      * private void healthDamage(){
