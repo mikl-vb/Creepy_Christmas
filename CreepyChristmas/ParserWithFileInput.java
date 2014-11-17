@@ -71,7 +71,7 @@ public class ParserWithFileInput
                 // note: we just ignore the rest of the input line.
             }
         }
-
+        
         // Now check whether this word is known. If so, create a command
         // with it. If not, create a "null" command (for unknown command).
         if(commands.isCommand(word1)) {
@@ -131,7 +131,7 @@ public class ParserWithFileInput
         fileReader3.readInputLine();
         
 
-        if(fileReader.eof())
+        if(fileReader3.eof())
         {
             word1="quit";
             word2=null;
@@ -159,8 +159,10 @@ public class ParserWithFileInput
             return new Command(null, word2); 
         }
     }
+   
+    }
     //public void showCommands()
     //{
     //    commands.showAll();
     //}
-}
+
