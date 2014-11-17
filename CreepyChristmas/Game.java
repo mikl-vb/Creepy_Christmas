@@ -207,7 +207,9 @@ public class Game
                 System.out.println("You grabbed the sleigh bells.");
 
                 //need to make them die and start over
-                System.out.println("You DIED...");
+                System.out.println("The sound of the bells sound so intense,");
+                System.out.println("your precious eardrums bursted and");
+                System.out.println("your head exploded... YOU DIED!");
                 
                 wantToQuit = true;
                 return wantToQuit;
