@@ -134,7 +134,7 @@ public class Game
         }
         System.out.println("Thank you for playing.  Good bye.");
       
-}
+    }
     public void playWithFileInput2() 
     {            
         printWelcome();
