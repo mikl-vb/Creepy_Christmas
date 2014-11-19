@@ -39,8 +39,6 @@ public class Game
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
         
-
-        
         health = new PlayerHealth();
         
         
@@ -288,12 +286,13 @@ public class Game
         }
     }
     
-    private void healthDamage(){
-        tempHealth = health.getHealth();
+    public void healthDamage(){
+        int tempHealth = health.getHealth();
         
         System.out.println("Health Damage");
         health.getHealthDescription(tempHealth - 1);
         health.setHealth(tempHealth-1);
+        System.out.print(health.getHealth());
     }
      
 }
