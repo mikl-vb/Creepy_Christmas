@@ -288,13 +288,12 @@ public class Game
         }
     }
     
-
-    /**
-     * 
-     * private void healthDamage(){
-     *   health = thisHealth - 1;
-     *   System.out.println("Health Damage");
-     *  }
-     * 
-     */
+    private void healthDamage(){
+        tempHealth = health.getHealth();
+        
+        System.out.println("Health Damage");
+        health.getHealthDescription(tempHealth - 1);
+        health.setHealth(tempHealth-1);
+    }
+     
 }

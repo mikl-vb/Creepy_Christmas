@@ -6,4 +6,6 @@ comment1.params=health
 comment1.target=java.lang.String\ getHealthDescription(int)
 comment2.params=
 comment2.target=int\ getHealth()
-numComments=3
+comment3.params=health
+comment3.target=void\ setHealth(int)
+numComments=4
