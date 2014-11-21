@@ -22,9 +22,14 @@ public class Boss
         int thisHealth = 10;
 
     }
+<<<<<<< HEAD
 
     public void hitBoss(Command command)
     {
+=======
+    
+    public void firstBossInfo(){
+>>>>>>> FETCH_HEAD
         
         bossHealth.reduceHealth();
         

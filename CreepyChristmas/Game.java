@@ -36,7 +36,11 @@ public class Game
         createRooms();
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> FETCH_HEAD
     }
     /**
      * Create all the rooms and link their exits together.
@@ -200,12 +204,21 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
+<<<<<<< HEAD
         //else if(commandWord.equals("hit") {
 
             //hitBoss(command);
        
         
 
+=======
+        //else if(commandWord.equals("hit") 
+        else if(commandWord.equals("hit")){
+           
+        }
+         
+           // hitBoss(command);
+>>>>>>> FETCH_HEAD
         else if(commandWord.equals("grab")){
             if(command.getSecondWord().equals("bells")){
                 System.out.println("You grabbed the sleigh bells.");
@@ -225,6 +238,7 @@ public class Game
         }
         // else command not recognised.
         return wantToQuit;
+        
     }
 
     // implementations of user commands:
@@ -287,6 +301,17 @@ public class Game
     }
 
     
+<<<<<<< HEAD
 
+=======
+
+    
+    
+   
+  
+
+    
+     
+>>>>>>> FETCH_HEAD
 
 }
