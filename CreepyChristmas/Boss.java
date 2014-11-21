@@ -8,10 +8,10 @@
 public class Boss
 {
     // instance variables - replace the example below with your own
-    private Health thisHealth;
+    public Health bossHealth;
+    public Health playerHealth;
     
-    
-    
+
     
 
     /**
@@ -19,17 +19,21 @@ public class Boss
      */
     public Boss()
     {
-       int thisHealth = 10;
-       
-    }
-    
-    public void firstBossInfo()
-    {
-        
-        
+        int thisHealth = 10;
+
     }
 
-  
+    public void hitBoss(Command command)
+    {
+        
+        bossHealth.reduceHealth();
+        
+               
+
+    }
+    
+    
+
 }
- //Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms
- // boss room subclass of room. 
+//Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms
+// boss room subclass of room. 

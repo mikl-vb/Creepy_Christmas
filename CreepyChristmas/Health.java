@@ -65,12 +65,11 @@ public class Health
         this.health = health;
     }
     
-<<<<<<< HEAD:CreepyChristmas/Health.java
+
     public void reduceHealth()
     {
         health = health -1;
     }
     
-=======
->>>>>>> FETCH_HEAD:CreepyChristmas/PlayerHealth.java
+
 }

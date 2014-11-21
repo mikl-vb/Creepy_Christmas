@@ -7,27 +7,30 @@
  */
 public class Boss2 extends Boss
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    
+    
 
     /**
      * Constructor for objects of class Boss2
      */
     public Boss2()
     {
-        // initialise instance variables
-        x = 0;
+       super(); 
+    }
+    
+    public void getBoss2Info()
+    {
+        System.out.println("I am boss 2 add info here....");
+    }
+    
+    public void hitBoss(Command command)
+    {
+       super.hitBoss(command);
+       
+       System.out.println("You hit boss 2 and blah blah blah");
+       playerHealth.reduceHealth();
+       
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
 }

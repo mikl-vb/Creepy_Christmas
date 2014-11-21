@@ -1,16 +1,16 @@
 /**
-* Name of the Game: Creepy Christmas
-* Name of project team: The Dream Team
-* Team Members: Michael Van Buren, Danny Nguyen, Jeremiah Clark, Brenden Worth
-* 
-* Description: You are a slacker elf who over sleeps work one day. As you walk to the workshop, you realize something is wrong - it is a wretched looking candy cane tower. 
-*              Presented with a series of puzzles, riddles, and fights in order to reach the top level of the candy cane tower, you must not only figure out what is wrong but also how to fix it. 
-*              At the final level you discover that Santa himself has turned evil and realize that it is up to you to save Christmas. Can you be the elf that saved Christmas?
-*              
-* Features Added: We have added 5 more rooms along with a special room called Dungeon which has an elevator that can take you to a different floor in the game.
-*                 In the starting room we added 3 objects that dictate how you start the game. Each object has a different action that occurs once you choose to grab that object.
-*                 
-*                 
+ * Name of the Game: Creepy Christmas
+ * Name of project team: The Dream Team
+ * Team Members: Michael Van Buren, Danny Nguyen, Jeremiah Clark, Brenden Worth
+ * 
+ * Description: You are a slacker elf who over sleeps work one day. As you walk to the workshop, you realize something is wrong - it is a wretched looking candy cane tower. 
+ *              Presented with a series of puzzles, riddles, and fights in order to reach the top level of the candy cane tower, you must not only figure out what is wrong but also how to fix it. 
+ *              At the final level you discover that Santa himself has turned evil and realize that it is up to you to save Christmas. Can you be the elf that saved Christmas?
+ *              
+ * Features Added: We have added 5 more rooms along with a special room called Dungeon which has an elevator that can take you to a different floor in the game.
+ *                 In the starting room we added 3 objects that dictate how you start the game. Each object has a different action that occurs once you choose to grab that object.
+ *                 
+ *                 
 
  */
 
@@ -21,44 +21,31 @@ public class Game
     public static Room currentRoom;
     public static Room elevator;
     public static Room floor2;
-    
-    
+
     private Health playerHealth;
     private int thisHealth;
-    
+
     private Health bossHealth;
-    
-        
+
     /**
      * Create the game and initialise its internal map.
      */
     public Game() 
     {
-        
+
         createRooms();
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
-        
-<<<<<<< HEAD
 
-        
-        
-=======
-        health = new PlayerHealth();
->>>>>>> FETCH_HEAD
-        
-        
     }
-
-
     /**
      * Create all the rooms and link their exits together.
      */
     private void createRooms()
     {
         Room floor1, floor3, floor4, floor5, floor6, 
-         floor7, floor8, floor9, floor10, dungeon;
-      
+        floor7, floor8, floor9, floor10, dungeon;
+
         // create the rooms
         floor1 = new StartingRoom("The door closes after you walk in and " +
             "there are no exits. \n Grab the coal, sleigh bells, or milk" +
@@ -73,41 +60,38 @@ public class Game
         floor9 = new Room("Floor: 9");
         floor10 = new Room("Floor: 10...The Top...");
         elevator = new Room("The elevator... \n You take the elevator to the 5th floor.");
-        
-        
+
         // initialise room exits
-
         floor2.setExit("upstairs", floor3);
-
         floor3.setExit("downstairs", floor2);
         floor3.setExit("upstairs",floor4);
-        
+
         floor4.setExit("downstairs", floor3);
         floor4.setExit("upstairs",floor5);
 
         floor5.setExit("downstairs", floor4);
         floor5.setExit("upstairs", floor6);
-        
+
         floor6.setExit("downstairs", floor5);
         floor6.setExit("upstairs", floor7);
-        
+
         floor7.setExit("downstairs", floor6);
         floor7.setExit("upstairs", floor8);
-        
+
         floor8.setExit("downstairs", floor7);
         floor8.setExit("upstairs", floor9);
-        
+
         floor9.setExit("downstairs", floor8);
         floor9.setExit("upstairs", floor10);
-       
+
         floor10.setExit("downstairs", floor9);
-        
+
         elevator.setExit("forward", floor5);
-        
+
         currentRoom = floor1;  // start game on first floor
-        
+
     }
-    
+
     /**
      *  Main play routine.  Loops until end of play.
      */
@@ -117,7 +101,7 @@ public class Game
 
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
-                
+
         boolean finished = false;
         while (! finished) {
             Command command = parser.getCommand();
@@ -125,51 +109,54 @@ public class Game
         }
         System.out.println("Thank you for playing.  Good bye.");
     }
+
     public void playWithFileInput1() 
     {            
         printWelcome();
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
-          
+
         boolean finished = false;
         while (! finished) {
             Command command = parserWithFileInput.getCommandForCommands1();
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
-      
+
     }
+
     public void playWithFileInput2() 
     {            
         printWelcome();
-        
+
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
-        
+
         boolean finished = false;
         while (! finished) {
             Command command = parserWithFileInput.getCommandForCommands2();
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
-        
+
     }
+
     public void playWithFileInput3() 
     {            
         printWelcome();
-        
+
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
-        
-                
+
         boolean finished = false;
         while (! finished) {
             Command command = parserWithFileInput.getCommandForCommands3();
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
-        
+
     }
+
     /**
      * Print out the opening message for the player.
      */
@@ -188,7 +175,7 @@ public class Game
     public void setRoom(Room pRoom){
         currentRoom = pRoom;
     }
-    
+
     /**
      * Given a command, process (that is: execute) the command.
      * @param command The command to be processed.
@@ -214,12 +201,11 @@ public class Game
             wantToQuit = quit(command);
         }
         //else if(commandWord.equals("hit") {
-            
-           // hitBoss(command);
-          
-            
+
+            //hitBoss(command);
+       
         
-        
+
         else if(commandWord.equals("grab")){
             if(command.getSecondWord().equals("bells")){
                 System.out.println("You grabbed the sleigh bells.");
@@ -230,7 +216,7 @@ public class Game
                 System.out.println("your precious eardrums bursted and");
                 System.out.println("your head exploded... YOU DIED!");
                 System.out.println("");
-                
+
                 wantToQuit = true;
                 return wantToQuit;
             }
@@ -283,16 +269,7 @@ public class Game
         }
     }
 
-    /**
-    public void hitBoss(Command command)
-    {
-        bossHealth.
-        
-        
-    }
-    */
-    
-    
+
     /** 
      * "Quit" was entered. Check the rest of the command to see
      * whether we really quit the game.
@@ -310,21 +287,6 @@ public class Game
     }
 
     
-<<<<<<< HEAD
-    
-    
-   
-  
 
-=======
-    public void healthDamage(){
-        int tempHealth = health.getHealth();
-        
-        System.out.println("Health Damage");
-        health.getHealthDescription(tempHealth - 1);
-        health.setHealth(tempHealth-1);
-        System.out.print(health.getHealth());
-    }
-     
->>>>>>> FETCH_HEAD
+
 }
