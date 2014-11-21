@@ -39,9 +39,13 @@ public class Game
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
         
+<<<<<<< HEAD
 
         
         
+=======
+        health = new PlayerHealth();
+>>>>>>> FETCH_HEAD
         
         
     }
@@ -306,9 +310,21 @@ public class Game
     }
 
     
+<<<<<<< HEAD
     
     
    
   
 
+=======
+    public void healthDamage(){
+        int tempHealth = health.getHealth();
+        
+        System.out.println("Health Damage");
+        health.getHealthDescription(tempHealth - 1);
+        health.setHealth(tempHealth-1);
+        System.out.print(health.getHealth());
+    }
+     
+>>>>>>> FETCH_HEAD
 }
