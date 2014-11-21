@@ -23,8 +23,7 @@ public class Boss
        
     }
     
-    public void firstBossInfo()
-    {
+    public void firstBossInfo(){
         
         
     }

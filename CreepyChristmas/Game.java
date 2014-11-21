@@ -39,15 +39,6 @@ public class Game
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
         
-<<<<<<< HEAD
-
-        
-        
-=======
-        health = new PlayerHealth();
->>>>>>> FETCH_HEAD
-        
-        
     }
 
 
@@ -213,13 +204,12 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
-        //else if(commandWord.equals("hit") {
-            
+        //else if(commandWord.equals("hit") 
+        else if(commandWord.equals("hit")){
+           
+        }
+         
            // hitBoss(command);
-          
-            
-        
-        
         else if(commandWord.equals("grab")){
             if(command.getSecondWord().equals("bells")){
                 System.out.println("You grabbed the sleigh bells.");
@@ -239,6 +229,7 @@ public class Game
         }
         // else command not recognised.
         return wantToQuit;
+        
     }
 
     // implementations of user commands:
@@ -310,21 +301,13 @@ public class Game
     }
 
     
-<<<<<<< HEAD
+
     
     
    
   
 
-=======
-    public void healthDamage(){
-        int tempHealth = health.getHealth();
-        
-        System.out.println("Health Damage");
-        health.getHealthDescription(tempHealth - 1);
-        health.setHealth(tempHealth-1);
-        System.out.print(health.getHealth());
-    }
+    
      
->>>>>>> FETCH_HEAD
+
 }
