@@ -5,16 +5,16 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PlayerHealth
+public class Health
 {
     // instance variables - replace the example below with your own
     private int health;
     private String healthDescription;
-
+    
     /**
      * Constructor for objects of class Health
      */
-    public PlayerHealth(){
+    public Health(){
         health = 10;
         healthDescription = getHealthDescription(health);
         
@@ -64,4 +64,10 @@ public class PlayerHealth
     {
         this.health = health;
     }
+    
+    public void reduceHealth()
+    {
+        health = health -1;
+    }
+    
 }

@@ -1,20 +1,17 @@
 /**
- *  This class is the main class of the "World of Zuul" application. 
- *  "World of Zuul" is a very simple, text based adventure game.  Users 
- *  can walk around some scenery. That's all. It should really be extended 
- *  to make it more interesting!
- * 
- *  To play this game, create an instance of this class and call the "play"
- *  method.
- * 
- *  This main class creates and initialises all the others: it creates all
- *  rooms, creates the parser and starts the game.  It also evaluates and
- *  executes the commands that the parser returns.
- * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2011.08.08
- * 
- * Testing- 11.12.14
+* Name of the Game: Creepy Christmas
+* Name of project team: The Dream Team
+* Team Members: Michael Van Buren, Danny Nguyen, Jeremiah Clark, Brenden Worth
+* 
+* Description: You are a slacker elf who over sleeps work one day. As you walk to the workshop, you realize something is wrong - it is a wretched looking candy cane tower. 
+*              Presented with a series of puzzles, riddles, and fights in order to reach the top level of the candy cane tower, you must not only figure out what is wrong but also how to fix it. 
+*              At the final level you discover that Santa himself has turned evil and realize that it is up to you to save Christmas. Can you be the elf that saved Christmas?
+*              
+* Features Added: We have added 5 more rooms along with a special room called Dungeon which has an elevator that can take you to a different floor in the game.
+*                 In the starting room we added 3 objects that dictate how you start the game. Each object has a different action that occurs once you choose to grab that object.
+*                 
+*                 
+
  */
 
 public class Game 
@@ -26,8 +23,11 @@ public class Game
     public static Room floor2;
     
     
-    private PlayerHealth health;
+    private Health playerHealth;
     private int thisHealth;
+    
+    private Health bossHealth;
+    
         
     /**
      * Create the game and initialise its internal map.
@@ -41,7 +41,7 @@ public class Game
         
 
         
-        health = new PlayerHealth();
+        
         
         
     }
@@ -209,6 +209,13 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
+        //else if(commandWord.equals("hit") {
+            
+           // hitBoss(command);
+          
+            
+        
+        
         else if(commandWord.equals("grab")){
             if(command.getSecondWord().equals("bells")){
                 System.out.println("You grabbed the sleigh bells.");
@@ -272,6 +279,16 @@ public class Game
         }
     }
 
+    /**
+    public void hitBoss(Command command)
+    {
+        bossHealth.
+        
+        
+    }
+    */
+    
+    
     /** 
      * "Quit" was entered. Check the rest of the command to see
      * whether we really quit the game.
@@ -287,13 +304,11 @@ public class Game
             return true;  // signal that we want to quit
         }
     }
+
     
-    private void healthDamage(){
-        tempHealth = health.getHealth();
-        
-        System.out.println("Health Damage");
-        health.getHealthDescription(tempHealth - 1);
-        health.setHealth(tempHealth-1);
-    }
-     
+    
+    
+   
+  
+
 }
