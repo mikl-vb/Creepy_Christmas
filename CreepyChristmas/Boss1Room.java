@@ -1,26 +1,35 @@
-import java.util.HashMap;
-/**
- * Goodhue's SpecialRoomOffice
- * 
- * Adding a special capability to just one room.
- * 
- * 2013-11-15
- */
-public class StartingRoom extends Room
 
+/**
+ * Write a description of class Boss1Room here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Boss1Room extends Room
 {
     //private Room currentRoom;
 
+    
     /**
      * Constructor for objects of class SpecialRoomOffice
      */
-    public StartingRoom(String description)
+    public Boss1Room(String description)
     {
         super(description);
     }
 
     public void grab(Command command)
     {
+        if(command.getSecondWord().equals("boss")){
+            System.out.println("");
+            Room boss1Room = new Room("You are in the boss' room.");
+
+            Game.currentRoom = boss1Room;
+
+            //boss1Room.setExit("upstairs",Game.floor7);
+            changeDescription("***Change description...?***");
+        }
+        
         if(command.getSecondWord().equals("coal")){
             System.out.println("");
             Room dungeon = new Room("You fall into in a dark and dusty dungeon. " +
@@ -39,9 +48,6 @@ public class StartingRoom extends Room
 
                 Game.currentRoom = Game.floor2;
                 //=======
-<<<<<<< HEAD
-                
-=======
             }else{
                 if(command.getSecondWord().equals("bells")){
                     System.out.println("You grabbed the sleigh bells.");
@@ -54,9 +60,9 @@ public class StartingRoom extends Room
                 else{
                     super.grab(command);
                 }
->>>>>>> FETCH_HEAD
             }
         }
+        
     }
 
 }

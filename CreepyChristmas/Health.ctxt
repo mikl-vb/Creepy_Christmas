@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.params=
-comment0.target=PlayerHealth()
+comment0.target=Health()
 comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Health\n
 comment1.params=health
 comment1.target=java.lang.String\ getHealthDescription(int)
 comment2.params=
 comment2.target=int\ getHealth()
-numComments=3
+comment3.params=health
+comment3.target=void\ setHealth(int)
+comment4.params=
+comment4.target=void\ reduceHealth()
+numComments=5

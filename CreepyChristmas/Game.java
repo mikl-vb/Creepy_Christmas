@@ -1,20 +1,17 @@
 /**
- *  This class is the main class of the "World of Zuul" application. 
- *  "World of Zuul" is a very simple, text based adventure game.  Users 
- *  can walk around some scenery. That's all. It should really be extended 
- *  to make it more interesting!
+ * Name of the Game: Creepy Christmas
+ * Name of project team: The Dream Team
+ * Team Members: Michael Van Buren, Danny Nguyen, Jeremiah Clark, Brenden Worth
  * 
- *  To play this game, create an instance of this class and call the "play"
- *  method.
- * 
- *  This main class creates and initialises all the others: it creates all
- *  rooms, creates the parser and starts the game.  It also evaluates and
- *  executes the commands that the parser returns.
- * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2011.08.08
- * 
- * Testing- 11.12.14
+ * Description: You are a slacker elf who over sleeps work one day. As you walk to the workshop, you realize something is wrong - it is a wretched looking candy cane tower. 
+ *              Presented with a series of puzzles, riddles, and fights in order to reach the top level of the candy cane tower, you must not only figure out what is wrong but also how to fix it. 
+ *              At the final level you discover that Santa himself has turned evil and realize that it is up to you to save Christmas. Can you be the elf that saved Christmas?
+ *              
+ * Features Added: We have added 5 more rooms along with a special room called Dungeon which has an elevator that can take you to a different floor in the game.
+ *                 In the starting room we added 3 objects that dictate how you start the game. Each object has a different action that occurs once you choose to grab that object.
+ *                 
+ *                 
+
  */
 
 public class Game 
@@ -25,9 +22,17 @@ public class Game
     public static Room elevator;
     public static Room floor2;
 
+<<<<<<< HEAD
     private PlayerHealth health;
     private int thisHealth;
 
+=======
+    private Health playerHealth;
+    private int thisHealth;
+
+    private Health bossHealth;
+
+>>>>>>> FETCH_HEAD
     /**
      * Create the game and initialise its internal map.
      */
@@ -37,12 +42,22 @@ public class Game
         createRooms();
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
 
+=======
         
+<<<<<<< HEAD
         health = new PlayerHealth();
 
     }
 
+=======
+>>>>>>> FETCH_HEAD
+    }
+>>>>>>> FETCH_HEAD
     /**
      * Create all the rooms and link their exits together.
      */
@@ -55,6 +70,7 @@ public class Game
         floor1 = new StartingRoom("The door closes after you walk in and \n" +
             "there are no exits. \n Grab the coal, sleigh bells, or milk" +
             "\n Commands: grab... coal, bells, or  milk");
+<<<<<<< HEAD
             
         floor2 = new Room("\n" + "Riddle Room \n" +
             "- A burst of light fades away as you come to realize that you are \n" +
@@ -80,6 +96,17 @@ public class Game
         
         floor10 = new Room("\n" + "The Top Floor..... The Riddler \n");
         
+=======
+        floor2 = new Room("Floor: 2");
+        floor3 = new Room("Floor: 3");
+        floor4 = new Room("Floor: 4");
+        floor5 = new Room("Floor: 5");
+        floor6 = new Room("Floor: 6");
+        floor7 = new Room("Floor: 7");
+        floor8 = new Room("Floor: 8");
+        floor9 = new Room("Floor: 9");
+        floor10 = new Room("Floor: 10...The Top...");
+>>>>>>> FETCH_HEAD
         elevator = new Room("The elevator... \n You take the elevator to the 5th floor.");
 
         // initialise room exits
@@ -221,6 +248,21 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
+<<<<<<< HEAD
+        //else if(commandWord.equals("hit") {
+
+            //hitBoss(command);
+       
+        
+
+=======
+        //else if(commandWord.equals("hit") 
+        else if(commandWord.equals("hit")){
+           
+        }
+         
+           // hitBoss(command);
+>>>>>>> FETCH_HEAD
         else if(commandWord.equals("grab")){
             
             if(command.getSecondWord().equals("bells")){
@@ -241,6 +283,7 @@ public class Game
         }
         // else command not recognised.
         return wantToQuit;
+        
     }
 
     // implementations of user commands:
@@ -290,6 +333,7 @@ public class Game
         }
     }
 
+
     /** 
      * "Quit" was entered. Check the rest of the command to see
      * whether we really quit the game.
@@ -305,13 +349,22 @@ public class Game
             return true;  // signal that we want to quit
         }
     }
+<<<<<<< HEAD
+=======
 
-    /**
-     * 
-     * private void healthDamage(){
-     *   health = thisHealth - 1;
-     *   System.out.println("Health Damage");
-     *  }
-     * 
-     */
+    
+<<<<<<< HEAD
+
+=======
+
+    
+    
+   
+  
+
+    
+     
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
+
 }
