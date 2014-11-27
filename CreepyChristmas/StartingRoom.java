@@ -11,7 +11,6 @@ public class StartingRoom extends Room
 {
     //private Room currentRoom;
 
-    
     /**
      * Constructor for objects of class SpecialRoomOffice
      */
@@ -34,13 +33,13 @@ public class StartingRoom extends Room
             changeDescription("***Change description...?***");
         }
         else{
-            //<<<<<<< Updated upstream
             if(command.getSecondWord().equals("milk")){
                 System.out.println("You grabbed the milk and cookies." +
                     "\n You have teleported to the second floor.");
 
                 Game.currentRoom = Game.floor2;
-                //=======
+
+            }else{
                 if(command.getSecondWord().equals("bells")){
                     System.out.println("You grabbed the sleigh bells.");
 
@@ -52,6 +51,7 @@ public class StartingRoom extends Room
                 else{
                     super.grab(command);
                 }
+
             }
         }
     }
