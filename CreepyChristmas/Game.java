@@ -83,7 +83,11 @@ public class Game
         
         floor9 = new Room("\n" + "Ms. Sticky Clause Room \n");
         
+<<<<<<< HEAD
         floor10 = new Room("\n" + "The Top Floor..... Scary Santa \n");
+=======
+        floor10 = new Room("\n" + "The Top Floor..... The Riddler \n");
+>>>>>>> origin/master
         
 
         floor2 = new Room("Floor: 2");

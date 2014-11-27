@@ -7,7 +7,10 @@
  */
 public class Boss1Room extends Room
 {
+<<<<<<< HEAD
     public Boss1 Ruderus;
+=======
+>>>>>>> origin/master
     
     /**
      * Constructor for objects of class SpecialRoomOffice
@@ -15,7 +18,10 @@ public class Boss1Room extends Room
     public Boss1Room(String description)
     {
         super(description);
+<<<<<<< HEAD
         Ruderus = new Boss1(); 
+=======
+>>>>>>> origin/master
     }
 
     public void grab(Command command)
