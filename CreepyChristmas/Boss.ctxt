@@ -1,11 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Boss()
-<<<<<<< HEAD
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Boss\r\n
-=======
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Boss\n
->>>>>>> origin/master
 comment1.params=command
 comment1.target=void\ hitBoss(Command)
 comment2.params=
