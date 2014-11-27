@@ -38,10 +38,7 @@ public class StartingRoom extends Room
                     "\n You have teleported to the second floor.");
 
                 Game.currentRoom = Game.floor2;
-                //=======
-<<<<<<< HEAD
-                
-=======
+
             }else{
                 if(command.getSecondWord().equals("bells")){
                     System.out.println("You grabbed the sleigh bells.");
@@ -54,7 +51,7 @@ public class StartingRoom extends Room
                 else{
                     super.grab(command);
                 }
->>>>>>> FETCH_HEAD
+
             }
         }
     }

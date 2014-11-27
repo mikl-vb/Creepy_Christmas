@@ -22,17 +22,17 @@ public class Game
     public static Room elevator;
     public static Room floor2;
 
-<<<<<<< HEAD
-    private PlayerHealth health;
+
+    private Health health;
     private int thisHealth;
 
-=======
+
     private Health playerHealth;
-    private int thisHealth;
+    //private int thisHealth;
 
     private Health bossHealth;
 
->>>>>>> FETCH_HEAD
+
     /**
      * Create the game and initialise its internal map.
      */
@@ -42,35 +42,24 @@ public class Game
         createRooms();
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
 
-=======
-        
-<<<<<<< HEAD
-        health = new PlayerHealth();
+        health = new Health();
 
     }
 
-=======
->>>>>>> FETCH_HEAD
-    }
->>>>>>> FETCH_HEAD
     /**
      * Create all the rooms and link their exits together.
      */
     private void createRooms()
     {
         Room floor1, floor3, floor4, floor5, floor6, 
-        floor7, floor8, floor9, floor10, dungeon;
+        boss1Room, floor8, floor9, floor10, dungeon;
 
         // create the rooms
         floor1 = new StartingRoom("The door closes after you walk in and \n" +
             "there are no exits. \n Grab the coal, sleigh bells, or milk" +
             "\n Commands: grab... coal, bells, or  milk");
-<<<<<<< HEAD
+
             
         floor2 = new Room("\n" + "Riddle Room \n" +
             "- A burst of light fades away as you come to realize that you are \n" +
@@ -88,7 +77,7 @@ public class Game
         
         floor6 = new Room("\n" + "Raging Elf (Part 2) Room \n");
         
-        floor7 = new Room("\n" + "Three Headed Reindeer - Ruderus Room \n");
+        boss1Room = new Room("\n" + "Three Headed Reindeer - Ruderus Room \n");
         
         floor8 = new Room("\n" + "Riddle Room 2 \n");
         
@@ -96,17 +85,17 @@ public class Game
         
         floor10 = new Room("\n" + "The Top Floor..... The Riddler \n");
         
-=======
+
         floor2 = new Room("Floor: 2");
         floor3 = new Room("Floor: 3");
         floor4 = new Room("Floor: 4");
         floor5 = new Room("Floor: 5");
         floor6 = new Room("Floor: 6");
-        floor7 = new Room("Floor: 7");
+        boss1Room = new Room("Floor: 7");
         floor8 = new Room("Floor: 8");
         floor9 = new Room("Floor: 9");
         floor10 = new Room("Floor: 10...The Top...");
->>>>>>> FETCH_HEAD
+
         elevator = new Room("The elevator... \n You take the elevator to the 5th floor.");
 
         // initialise room exits
@@ -121,12 +110,12 @@ public class Game
         floor5.setExit("upstairs", floor6);
 
         floor6.setExit("downstairs", floor5);
-        floor6.setExit("upstairs", floor7);
+        floor6.setExit("upstairs", boss1Room);
 
-        floor7.setExit("downstairs", floor6);
-        floor7.setExit("upstairs", floor8);
+        boss1Room.setExit("downstairs", floor6);
+        boss1Room.setExit("upstairs", floor8);
 
-        floor8.setExit("downstairs", floor7);
+        floor8.setExit("downstairs", boss1Room);
         floor8.setExit("upstairs", floor9);
 
         floor9.setExit("downstairs", floor8);
@@ -248,21 +237,21 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
-<<<<<<< HEAD
+
         //else if(commandWord.equals("hit") {
 
             //hitBoss(command);
        
         
 
-=======
+
         //else if(commandWord.equals("hit") 
         else if(commandWord.equals("hit")){
            
         }
          
            // hitBoss(command);
->>>>>>> FETCH_HEAD
+
         else if(commandWord.equals("grab")){
             
             if(command.getSecondWord().equals("bells")){
@@ -349,22 +338,5 @@ public class Game
             return true;  // signal that we want to quit
         }
     }
-<<<<<<< HEAD
-=======
-
-    
-<<<<<<< HEAD
-
-=======
-
-    
-    
-   
-  
-
-    
-     
->>>>>>> FETCH_HEAD
->>>>>>> FETCH_HEAD
 
 }

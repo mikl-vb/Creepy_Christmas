@@ -72,8 +72,5 @@ public class Health
     }
     
 
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD
 }
