@@ -162,8 +162,6 @@ public class Game
         floor9.setExit("downstairs", floor8);
         floor9.setExit("upstairs", floor10);
 
-        floor10.setExit("downstairs", floor9);
-
         elevator.setExit("forward", floor5);
 
         currentRoom = floor1;  // start game on first floor
