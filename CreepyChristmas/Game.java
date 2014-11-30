@@ -62,38 +62,76 @@ public class Game
 
             
         floor2 = new Room("\n" + "Riddle Room \n" +
-            "- A burst of light fades away as you come to realize that you are \n" +
+            "   A burst of light fades away as you come to realize that you are \n" +
             "in a new room. You look around and see large hall that you haven’t \n" +
             "noticed before, a black ceiling that seems to be slowly moving, \n" +
             "and snowflakes falling from the void above. Before you is an owl \n" +
             "whose feathers are as white as the snow around you, and the size \n" +
             "of two men");
             
-        floor3 = new Room("\n" + "Raging Elf Room \n");
+        floor3 = new Room("\n" + "Raging Elf Room \n" +
+            "   You walk into a room and you notice that it was the same room you \n" +
+            "built many toys in. You hear sounds in a distance..... A low rumble. \n" +
+            "The rumble grows louder and louder until you recognize many of the \n" +
+            "elves that you work with everyday are running towards you. They look \n" +
+            "strange. Their eyes are blood-shot red as if they have not slept in \n" +
+            "weeks, skin is pale as snow, and streams of white foam are coming \n" +
+            "from their mouths");
         
-        floor4 = new Room("\n" + "The Sword in the Snow Room \n");
+        floor4 = new Room("\n" + "The Sword in the Snow Room \n" +
+            "   You stand up and look around. In total darkness with the exception \n" +
+            "of a hole in the ceiling where a ray of light pours onto the ground. \n" +
+            "In the dirt, you see something shining. You reach to pick it up, you \n" +
+            "notice it is very warm and light..... It is a SWORD");
         
-        floor5 = new Room("\n" + "Burning Christmas Tree Room \n");
+        floor5 = new Room("\n" + "Burning Christmas Tree Room \n" +
+            "   Your eyes squinch as they are hit by a haze of smoke. The foul air \n" +
+            "fills your lungs and you begin to cough. As you are swinging your \n" +
+            "hands around and feel nothing, you hear a symphony of crackling. You \n" +
+            "wipe the water from your eyes and there, behold a room full of \n" +
+            "Christmas trees....... ON FIRE");
         
-        floor6 = new Room("\n" + "Raging Elf (Part 2) Room \n");
+        floor6 = new Room("\n" + "Raging Elf (Part 2) Room \n" +
+            "   You look forward and see a grand hallway with high crystal \n" +
+            "chandeliers, lined as if they were a path of stars. You take a step \n" +
+            "forward until when at the end of the hall, you hear a rumbling coming \n" +
+            "towards you. You pull out your sword..... Choose a move: \n" +
+            "   - Slash. \n" +
+            "   - Sparta Kick. \n" +
+            "   - Run Backwards. \n" +
+            "   - Don't Move");
         
-        boss1Room = new Room("\n" + "Three Headed Reindeer - Ruderus Room \n");
+        boss1Room = new Room("\n" + "Three Headed Reindeer - Ruderus Room \n" +
+            "   You step forward and hear a loud crack beneath your feet. You \n" +
+            "look down to see that your foot just pressed through an elf skull. \n" +
+            "This room is full of scattered elf skeletons with deep red glow \n" +
+            "pulsing from the walls. You hear a deep movement from the mound in \n" +
+            "front of you. You take another step and accidently crush more bones. \n" +
+            "With the clinking of the bones, the mound starts moving. The mound \n" +
+            "turns around and looks you face to face. \n" +
+            "There, the Three-Headed Reindeer speaks..... \n" +
+            "'Hello, I am Ruderus, the gatekeeper. You are my next MEAL! HAHAHA!' \n");
         
-        floor8 = new Room("\n" + "Riddle Room 2 \n");
+        floor8 = new Room("\n" + "Riddle Room 2 \n" +
+            "Riddler: 'Hello Small One, it seems as if a certain little elf has \n" +
+            "          gotten himself into a lot of trouble recently. \n");
         
-        floor9 = new Room("\n" + "Ms. Sticky Clause Room \n");
+        floor9 = new Room("\n" + "Ms. Sticky Clause Room \n" +
+            "You smell something that reminds you of a warm Christmas morning. \n" +
+            "The smell is rich, sweet, and enticing that it pulls you deeper \n" +
+            "into the room. As you try to move forward, you realize that your \n" +
+            "foot is caught in something sticky. You pull and pull but can't \n" +
+            "seem to get it free. Finally you pull out your sword and slash the \n" +
+            "vile substance and free yourself. Closely examining the substance, \n" +
+            "it looked like cookie dough but smelled like rotten jingleberry. You \n" +
+            "hear a hissing noise behind you. As you turn around, you see a \n" +
+            "black spider-like creature whose head is the same as Mrs. Clause");
 
-        floor10 = new Room("\n" + "The Top Floor..... Scary Santa \n");
+        floor10 = new Room("\n" + "The Top Floor..... Scary Santa \n" +
+            "Taking steps slowly into the room..... Snow and presents flying in \n" +
+            "different directions. \n" +
+            "There, you see Santa. Possessed, with dark force powers");
 
-        floor2 = new Room("Floor: 2");
-        floor3 = new Room("Floor: 3");
-        floor4 = new Room("Floor: 4");
-        floor5 = new Room("Floor: 5");
-        floor6 = new Room("Floor: 6");
-        boss1Room = new Room("Floor: 7");
-        floor8 = new Room("Floor: 8");
-        floor9 = new Room("Floor: 9");
-        floor10 = new Room("Floor: 10...The Top...");
 
         elevator = new Room("The elevator... \n You take the elevator to the 5th floor.");
 
