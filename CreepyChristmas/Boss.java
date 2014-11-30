@@ -47,7 +47,9 @@ public class Boss
 
     }
     
-    
+    public void death(){
+        System.out.println("Dead Boss...");
+    }
 
    }
     //Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms

@@ -33,4 +33,8 @@ public class Boss1 extends Boss
        super.hitBoss(command);
     }
     
+    public void death(){
+        System.out.println("dead boss 1");
+    }
+    
 }
