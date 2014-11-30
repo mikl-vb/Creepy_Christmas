@@ -21,7 +21,7 @@ public class Game
     public static Room currentRoom;
     public static Room elevator;
     public static Room floor2;
-
+    public static Room floor8;
 
     private Health health;
     private int thisHealth;
