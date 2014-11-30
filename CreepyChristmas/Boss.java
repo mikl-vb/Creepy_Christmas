@@ -6,12 +6,15 @@
  * @version (a version number or a date)
  */
 
-public abstract class Boss
+public class Boss
 {
     // instance variables - replace the example below with your own
     public Health bossHealth;
     public Health playerHealth;
     public Health Dead;
+    
+    
+
 
     
 
@@ -21,7 +24,10 @@ public abstract class Boss
     public Boss()
     {
         bossHealth = new Health();
-        Dead = false; 
+        
+
+        
+
         
 
     }
@@ -29,13 +35,14 @@ public abstract class Boss
 
     public void hitBoss(Command command)
     {
-           
+          bossHealth.reduceHealth(); 
+          bossHealth.printHealth();
     }
     
 
      public void firstBossInfo(){
       
-        bossHealth.reduceHealth();
+        
         
 
     }

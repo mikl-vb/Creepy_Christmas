@@ -77,4 +77,9 @@ public class Health
     public void death(){
     
     }
+    
+    public void printHealth()
+    {
+        System.out.println("Health:" + getHealth());
+    }
 }

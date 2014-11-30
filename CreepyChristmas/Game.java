@@ -31,6 +31,8 @@ public class Game
     //private int thisHealth;
 
     private Health bossHealth;
+    
+    private Boss thisBoss1;
 
 
     /**
@@ -43,7 +45,8 @@ public class Game
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
 
-        health = new Health();
+        playerHealth = new Health();
+        
 
     }
 
@@ -279,19 +282,15 @@ public class Game
             wantToQuit = quit(command);
         }
 
-        //else if(commandWord.equals("hit") {
-
-            //hitBoss(command);
-       
         
-
-
-        //else if(commandWord.equals("hit") 
         else if(commandWord.equals("hit")){
-           
+           thisBoss1 = new Boss1();
+           thisBoss1.hitBoss(command);
+           System.out.println("test");
         }
          
-           // hitBoss(command);
+           
+        
 
         else if(commandWord.equals("grab")){
             

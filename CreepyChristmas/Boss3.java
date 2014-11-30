@@ -7,6 +7,7 @@
  */
 public class Boss3 extends Boss
 {
+    private Boss Riddler;
     
 
     /**
@@ -15,6 +16,7 @@ public class Boss3 extends Boss
     public Boss3()
     {
         super();
+        Riddler = new Boss();
     }
 
     public void getBoss3Info()
@@ -24,10 +26,11 @@ public class Boss3 extends Boss
     
     public void hitBoss(Command command)
     {
+       System.out.println("You hit boss 3 and blah blah blah");
        super.hitBoss(command);
        
-       System.out.println("You hit boss 3 and blah blah blah");
-       playerHealth.reduceHealth();
+       
+       
        
     }
 }

@@ -7,7 +7,7 @@
  */
 public class Boss4 extends Boss
 {
-   
+   private Boss Santa;
 
     /**
      * Constructor for objects of class Boss4
@@ -15,6 +15,7 @@ public class Boss4 extends Boss
     public Boss4()
     {
         super();
+        Santa = new Boss();
     }
     
     public void getBoss4Info()
@@ -24,10 +25,11 @@ public class Boss4 extends Boss
     
     public void hitBoss(Command command)
     {
+       System.out.println("You hit boss 4 and blah blah blah");
        super.hitBoss(command);
        
-       System.out.println("You hit boss 4 and blah blah blah");
-       playerHealth.reduceHealth();
+       
+       
        
     }
 
