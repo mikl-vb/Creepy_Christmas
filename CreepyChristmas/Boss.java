@@ -11,7 +11,7 @@ public abstract class Boss
     // instance variables - replace the example below with your own
     public Health bossHealth;
     public Health playerHealth;
-    
+    public Health Dead;
 
     
 
@@ -21,6 +21,8 @@ public abstract class Boss
     public Boss()
     {
         bossHealth = new Health();
+        Dead = false; 
+        
 
     }
 
