@@ -10,4 +10,6 @@ comment3.params=health
 comment3.target=void\ setHealth(int)
 comment4.params=
 comment4.target=void\ reduceHealth()
-numComments=5
+comment5.params=
+comment5.target=void\ death()
+numComments=6
