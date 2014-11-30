@@ -71,10 +71,24 @@ dependency8.type=UsesDependency
 dependency9.from=ParserWithFileInput
 dependency9.to=ReadFile
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 package.editor.height=734
 package.editor.width=1061
+=======
+<<<<<<< HEAD
+objectbench.height=76
+objectbench.width=1342
+package.editor.height=571
+package.editor.width=1244
+package.editor.x=-8
+package.editor.y=-8
+=======
+package.editor.height=621
+package.editor.width=1069
+>>>>>>> FETCH_HEAD
 package.editor.x=0
 package.editor.y=23
+>>>>>>> origin/master
 package.numDependencies=24
 package.numTargets=16
 package.showExtends=true
@@ -84,10 +98,17 @@ readme.editor.height=666
 readme.editor.width=839
 readme.editor.x=0
 readme.editor.y=22
+<<<<<<< HEAD
+target1.editor.height=728
+target1.editor.width=683
+target1.editor.x=683
+target1.editor.y=0
+=======
 target1.editor.height=700
 target1.editor.width=900
 target1.editor.x=89
 target1.editor.y=87
+>>>>>>> origin/master
 target1.height=50
 target1.name=Command
 target1.naviview.expanded=true

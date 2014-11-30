@@ -2,6 +2,8 @@
 /**
  * Write a description of class Boss1 here.
  * 
+ * This is for the first place, 
+ * 
  * @author (your name) 
  * @version (a version number or a date)
  */
