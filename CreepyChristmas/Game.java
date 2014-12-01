@@ -303,6 +303,23 @@ public class Game
         }
 
     }
+<<<<<<< HEAD
+=======
+
+
+
+
+
+ 
+
+
+        
+
+
+
+
+
+>>>>>>> FETCH_HEAD
     public void playWithFileInput1() 
     {            
         printWelcome();
@@ -431,9 +448,19 @@ public class Game
             if(command.getSecondWord().equals("put"))
             {
                 playerDeath();
+<<<<<<< HEAD
 
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
                 System.out.println("You caught rabies...");
+=======
+
+                
+
+                System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
+
+                System.out.println("You caught rabies...");
+
+>>>>>>> FETCH_HEAD
                 wantToQuit = true;
                 return wantToQuit;
             }

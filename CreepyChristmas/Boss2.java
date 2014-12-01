@@ -34,7 +34,7 @@ public class Boss2 extends Boss
     }
     
     public void death(){
-        System.out.println("Dead Riddler");
+        System.out.println("Dead Sticky Clause");
     }
     
     public void whenKicked()
