@@ -123,7 +123,7 @@ public class Health
         
         else
         {
-            System.out.println("Boss Health: 0 ");
+            System.out.println("PlayerHealth: 0 ");
         }
     }
     

@@ -40,7 +40,7 @@ public class Boss1 extends Boss
     
     public void death(){
         System.out.println("Dead Ruderus");
-        return;
+       
     }
     
     public void whenKicked()

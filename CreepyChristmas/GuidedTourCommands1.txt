@@ -11,3 +11,10 @@ go upstairs
 slash ruderus
 slash ruderus
 kick ruderus
+slash stickyclause
+kick stickyclause
+slash stickyclause
+slash santa
+kick santa
+kick santa
+slash santa

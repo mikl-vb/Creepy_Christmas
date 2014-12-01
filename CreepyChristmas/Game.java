@@ -283,34 +283,13 @@ public class Game
 
             }
 
-            if(bossHealth1.getHealth() <1)
-            {
-                thisBoss1.death();
-                break;
-            }
-            if(bossHealth2.getHealth() <1)
-            {
-                thisBoss2.death();
-                break;
-            }
-            if(bossHealth3.getHealth() <1)
-            {
-                thisBoss3.death();
-                break;
-            }
-            if(bossHealth4.getHealth() <1)
-            {
-                thisBoss4.death();
-                quit(command);
-                
-            }
             
             
             
         }
         
         System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
-                "/n You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
+                "/n" + "You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
         
 
         System.out.println("Thank you for playing. Good bye.");
@@ -498,6 +477,11 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Ruderus reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                
+                if(bossHealth1.getHealth() <= 1)
+                {
+                    thisBoss1.death();
+                }
             }
             if(command.getSecondWord().equals("stickyclause"))
             {
@@ -513,7 +497,11 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Sticky Clause reduced your health by 1!");
                 playerHealth.printPlayerHealth();
-
+                
+                if(bossHealth2.getHealth() <= 1)
+                {
+                    thisBoss2.death();
+                }
             }
             if(command.getSecondWord().equals("riddler"))
             {
@@ -530,6 +518,11 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("The Riddler reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                
+                 if(bossHealth3.getHealth() <= 1)
+                {
+                    thisBoss3.death();
+                }
 
             }
 
@@ -544,9 +537,14 @@ public class Game
                 bossHealth4.printHealth();
                 System.out.println();
                 playerHealth.reduceHealth();
-                playerHealth.reduceHealth();
-                System.out.println("Santa reduced your health by 2!");
+                
+                System.out.println("Santa reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                
+                 if(bossHealth4.getHealth() <= 1)
+                {
+                    thisBoss4.death();
+                }
 
             }
         }
@@ -567,6 +565,11 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Ruderus reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                
+                if(bossHealth1.getHealth() <= 1)
+                {
+                    thisBoss1.death();
+                }
             }
             if(command.getSecondWord().equals("stickyclause"))
             {
@@ -583,7 +586,11 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Sticky Clause reduced your health by 1!");
                 playerHealth.printPlayerHealth();
-
+                
+                if(bossHealth2.getHealth() <= 1)
+                {
+                    thisBoss2.death();
+                }
             }
             if(command.getSecondWord().equals("riddler"))
             {
@@ -600,6 +607,11 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("The Riddler reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                
+                if(bossHealth3.getHealth() <= 1)
+                {
+                    thisBoss3.death();
+                }
 
             }
             if(command.getSecondWord().equals("santa"))
@@ -616,9 +628,14 @@ public class Game
                 bossHealth4.printHealth();
                 System.out.println();
                 playerHealth.reduceHealth();
-                playerHealth.reduceHealth();
-                System.out.println("Santa reduced your health by 2!");
+                
+                System.out.println("Santa reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                
+                if(bossHealth4.getHealth() <= 1)
+                {
+                    thisBoss4.death();
+                }
 
             }
 
