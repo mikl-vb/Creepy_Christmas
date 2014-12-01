@@ -32,6 +32,17 @@ public class Boss3 extends Boss
     }
     
     public void death(){
-        System.out.println("Dead stickyClause");
+        System.out.println("Dead Riddler");
+        
+    }
+    
+    public void whenKicked()
+    {
+        System.out.println("Your kick barely connects as the over-sized owls flaps away.");
+    }
+    
+    public void whenSlashed()
+    {
+        System.out.println("Your sword cuts the bird deeply as the foolish bird dives towards you.");
     }
 }

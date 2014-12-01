@@ -37,4 +37,15 @@ public class Boss2 extends Boss
         System.out.println("Dead Riddler");
     }
     
+    public void whenKicked()
+    {
+        System.out.println("Crunch! The toe of your boot slams into the black and red abdomin of your sticky enemy.");
+       
+    }
+    
+    public void whenSlashed()
+    {
+        System.out.println("A heap of exoskeleton flies over your head as you hack one of Ms. Clause's legs off!");
+    
+    }
 }

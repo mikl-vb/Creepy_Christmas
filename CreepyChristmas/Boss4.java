@@ -34,5 +34,15 @@ public class Boss4 extends Boss
         System.out.println("dead SANTA");
     }
 
+    public void whenKicked()
+    {
+        System.out.println("Santa starts laughing as your heel sinks into his enormous belly! It doesn't seem to have much affect.");
+        
+    }
     
+    public void whenSlashed()
+    {
+        System.out.println("As you move to strike Santa, your sword begins to shine brightly. You notice the sword burns Santa more than it cuts him!");
+    
+    }
 }

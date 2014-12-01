@@ -42,4 +42,15 @@ public class Boss1 extends Boss
         System.out.println("Dead Ruderus");
     }
     
+    public void whenKicked()
+    {
+        System.out.println("You hear a loud crack as the kick you lands solidly on one of the ferocious beast's jaw.");  
+        
+    }
+    
+    public void whenSlashed()
+    {
+        System.out.println("The beast make a loud roar as you sword kisses its breast.");
+        
+    }
 }
