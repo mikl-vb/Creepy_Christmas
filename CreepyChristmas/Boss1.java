@@ -40,12 +40,12 @@ public class Boss1 extends Boss
     
     public void death(){
         System.out.println("Dead Ruderus");
-<<<<<<< HEAD
+
        
-=======
+
         return;
         
->>>>>>> FETCH_HEAD
+
     }
     
     public void whenKicked()
