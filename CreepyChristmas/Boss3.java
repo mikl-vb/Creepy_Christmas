@@ -24,10 +24,10 @@ public class Boss3 extends Boss
         System.out.println("I am boss 3 add info here....");
     }
     
-    public void hitBoss(Command command)
+    public void kickBoss(Command command)
     {
        System.out.println("You hit boss 3 and blah blah blah");
-       super.hitBoss(command);
+       super.kickBoss(command);
        
        
        

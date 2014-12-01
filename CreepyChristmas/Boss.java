@@ -33,19 +33,14 @@ public class Boss
     }
 
 
-    public void hitBoss(Command command)
+    public void kickBoss(Command command)
     {
           bossHealth.reduceHealth(); 
           bossHealth.printHealth();
     }
     
 
-     public void firstBossInfo(){
-      
-        
-        
-
-    }
+    
     
     public void death(){
         System.out.println("Dead Boss...");
