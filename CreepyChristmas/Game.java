@@ -214,7 +214,13 @@ public class Game
         while (!finished) { 
             Command command = parser.getCommand();
             finished = processCommand(command);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
             if(playerHealth.getHealth() < 1){
                 playerDeath();
 
@@ -226,6 +232,12 @@ public class Game
                 }
 
             }
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+            
+        }
+>>>>>>> FETCH_HEAD
 
             System.out.println("Thank you for playing.  Good bye.");
         }}
@@ -271,6 +283,10 @@ public class Game
         boolean finished = false;
         while (! finished) {
             Command command = parserWithFileInput.getCommandForCommands3();
+            if(playerHealth.getHealth() == 0)
+            {
+                playerDeath();
+            }
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
