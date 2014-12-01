@@ -257,26 +257,30 @@ public class Game
             if(bossHealth4.getHealth() <1)
             {
                 thisBoss4.death();
-                System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
-                "/n You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
                 quit(command);
+                
             }
             
+            
+            
         }
+        
+        System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
+                "/n You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
+        
 
         System.out.println("Thank you for playing. Good bye.");
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD
+
+
 
  
 
-<<<<<<< HEAD
+
         
-=======
->>>>>>> FETCH_HEAD
+
+
 
     public void playWithFileInput1() 
     {            
@@ -397,7 +401,7 @@ public class Game
 
             if(command.getSecondWord().equals("still"))
             {
-<<<<<<< HEAD
+
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... Oh wait..... You're in Heaven");
                 playerDeath();
                 wantToQuit = true;
@@ -409,9 +413,8 @@ public class Game
             if(command.getSecondWord().equals("put"))
             {
                 playerDeath();
-                wantToQuit = true;
-                return wantToQuit;
-=======
+                
+
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
                 wantToQuit = true;
                 return wantToQuit;
@@ -426,7 +429,7 @@ public class Game
             if(command.getSecondWord().equals("elfs")){
                  System.out.println("You killed the elfs");
                  System.out.println("Millions of children will be without a present this year...");
->>>>>>> FETCH_HEAD
+
             }
         }
         else if(commandWord.equals("kick")){
