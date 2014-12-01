@@ -105,7 +105,23 @@ public class Game
             "noticed before, a black ceiling that seems to be slowly moving, \n" +
             "and snowflakes falling from the void above. Before you is an owl \n" +
             "whose feathers are as white as the snow around you, and the size \n" +
-            "of two men");
+            "of two men...\n" +
+            "\n" +
+            "Riddler: 'Hello Small One. I am the one that speaks to those in the darkness. \n" +
+            "I go by many names, but you may call me...the Riddler.\n" +
+            "Yes. I like that one.” *Head spins* \n" +
+            "Where can you work but never leave? Yes, it is Santa’s workshop that ensnares thee!\n" +
+            "It is true. The warm workshop that you once knew is no more...\n" +
+            "In its place a perverse realm, a maleficent shadow, a place with many dangers deep in store.\n" +
+            "What chases you during the day, consumes you at night, and jumps from a twitch of a switch?\n" +
+            "HAHAHA! It is darkness that fills this every inch of this little niche!\n" +
+            "When you look into the darkness, beware--the darkness looks back at you.\n" +
+            "Anger, fear, aggression, in a fight easy are they to go to. \n" +
+            "If once you start down the dark path, forever will it dominate your destiny. \n" +
+            "Consume you it will, as it did this cold and barren serenity. *Head Spins* \n" +
+            "\n" +
+            "You will know what to do when you are at peace.\n" +
+            "Yes, strength is needed at times, but with a little more knowledge soul will increase.\n");
 
             
         floor3 = new Room("\n" + "Floor 3:\n Raging Elf Room \n" +
@@ -159,9 +175,37 @@ public class Game
             "There, the Three-Headed Reindeer speaks..... \n" +
             "'Hello, I am Ruderus, the gatekeeper. You are my next MEAL! HAHAHA!'");
 
-        floor8 = new Room("\n" + "Floor 8:\n Riddle Room 2 \n" +
-            "Riddler: 'Hello Small One, it seems as if a certain little elf has \n" +
-            "          gotten himself into a lot of trouble recently'");
+
+        floor8 = new Room("\n" + "Room 8:\n Riddle Room 2 \n" +
+            "Riddler: 'Hello Small One, \n" + 
+            "It seems as if a certain little elf has gotten himself into a lot of trouble recently.\n" +
+            "You look surprised to see me! *Head spins* But… I have been expecting you! \n" +
+            "I have watched you Small One. Over and over again you should have died, but instead you refuse.\n" +
+            "Why, Small One? Why keep climbing? Why keep fighting? Do you believe that death is anything but inevitable? \n" +
+            "\n" +
+            "Yes... *Head spins* I have seen your fate and before me is nothing but darkness.\n" +
+            "Even if you make it to the top, before you is nothing.\n" +
+            "This place was suppose to embody love, joy, generosity--everything that is good in the world! \n" +
+            "And now what? The green seed rooted deep within the fat man. And as he belly grew jollier, his eyes grew greener. \n" +
+            "Things. Things pulled him in. \n" + 
+            "Things. Things he he wanted to keep for himself. \n" + 
+            "Things. Things turned the friendly Santa into a fiend! *Head spins* \n" +
+            "\n" +
+            "Why do you keep fighting Small One? Who are you fighting for? \n" + 
+            "There is nothing here, except greed, jealousy, and hatred. \n" +
+            "Do you believe that you can restore everything to the way it was before? \n" +
+            "Perhaps you can restore the love, peace, and joy of the North Pole? \n" +
+            "Maybe... \n" +
+            "Maybe...\n" +
+            "Maybe you can save Christmas?!? \n" +
+            "Vagaries of perceptions. *Head spins* But if you insist on your path... \n" +
+            "I will have to end it now. \n" +
+            "Have we forgotten already? When you search for trouble, trouble finds you!' \n" +
+            "\n" +
+            "The Riddler is now flying talon first towards you!\n" +
+            "Defend yourself hero!");
+
+
 
         floor9 = new Room("\n" + "Floor 9:\n Ms. Sticky Clause Room \n" +
             "You smell something that reminds you of a warm Christmas morning. \n" +
@@ -272,6 +316,7 @@ public class Game
         System.out.println("Thank you for playing. Good bye.");
     }
 
+<<<<<<< HEAD
 
 
 
@@ -281,6 +326,8 @@ public class Game
         
 
 
+=======
+>>>>>>> FETCH_HEAD
 
     public void playWithFileInput1() 
     {            
@@ -388,7 +435,7 @@ public class Game
             
         }
             
-            else if(commandWord.equals("throw")){
+           else if(commandWord.equals("throw")){
 
             if(command.getSecondWord().equals("milk"))
             {
@@ -413,9 +460,13 @@ public class Game
             if(command.getSecondWord().equals("put"))
             {
                 playerDeath();
+<<<<<<< HEAD
                 
 
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
+=======
+                System.out.println("You caught rabies...");
+>>>>>>> FETCH_HEAD
                 wantToQuit = true;
                 return wantToQuit;
             }
@@ -426,7 +477,7 @@ public class Game
             }
         }
         else if(commandWord.equals("kill")){
-            if(command.getSecondWord().equals("elfs")){
+            if(command.getSecondWord().equals("elves")){
                  System.out.println("You killed the elfs");
                  System.out.println("Millions of children will be without a present this year...");
 
