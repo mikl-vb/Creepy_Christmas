@@ -103,9 +103,17 @@ public class Health
 
     public void printHealth()
     {
-        System.out.println("Health:" + getHealth());
+        System.out.println("Boss Health:" + getHealth());
 
     }
+    
+    
+    public void printPlayerHealth()
+    {
+        System.out.println("Player Health:" + getHealth());
+
+    }
+    
 
 
     }

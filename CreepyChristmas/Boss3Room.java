@@ -8,7 +8,7 @@
 public class Boss3Room extends Room
 {
 
-    public Boss3 stickyClause;
+    public Boss3 riddler;
 
     
     /**
@@ -17,14 +17,14 @@ public class Boss3Room extends Room
     public Boss3Room(String description)
     {
         super(description);
-        stickyClause = new Boss3(); 
+        riddler = new Boss3(); 
     }
 
     public void grab(Command command)
     {
-        if(command.getSecondWord().equals("stickyClause")){
+        if(command.getSecondWord().equals("riddler")){
             System.out.println("");
-            Room boss3Room = new Room("You are in boss 1s room.");
+            Room boss3Room = new Room("You are in boss 3s room.");
 
             Game.currentRoom = boss3Room;
 
