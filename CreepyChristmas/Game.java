@@ -117,7 +117,7 @@ public class Game
             "weeks, skin is pale as snow, and streams of white foam are coming \n" +
             "from their mouths \n" +
             "\n" +
-            "Commands: go upstairs or stay still ");
+            "Commands: go upstairs or stay put");
 
         floor4 = new Room("\n" + "Floor 4:\n The Sword in the Snow Room \n" +
             "   You stand up and look around. In total darkness with the exception \n" +
@@ -136,13 +136,13 @@ public class Game
             
            
 
-        floor6 = new Room("\n" + "Floor 6:\n Raging Elf (Part 2) Room \n" +
+        floor6 = new Room("\n" + "Floor 6:\n Raging Elfs (Part 2) Room \n" +
             "   You look forward and see a grand hallway with high crystal \n" +
             "chandeliers, lined as if they were a path of stars. You take a step \n" +
             "forward until when at the end of the hall, you hear a rumbling coming \n" +
-            "towards you. You pull out your sword..... Choose a move: \n" +
+            "towards you. You pull out your sword..... Choose a move. \n" +
             "\n" +
-            "Commands: slash, kick, run backwards, don't move");
+            "Commands: kill elfs, stay put");
 
         /**
          * boss1Room is the marker of the boss levels
@@ -238,7 +238,7 @@ public class Game
                 }
 
             }
-<<<<<<< HEAD
+
             if(bossHealth1.getHealth() <1)
             {
                 thisBoss1.death();
@@ -266,14 +266,10 @@ public class Game
 
         System.out.println("Thank you for playing. Good bye.");
     }
-=======
-
-        }
 
 
-            System.out.println("Thank you for playing.  Good bye.");
-        }
->>>>>>> FETCH_HEAD
+ 
+
 
     public void playWithFileInput1() 
     {            
@@ -369,7 +365,7 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
-<<<<<<< HEAD
+
         
         else if(commandWord.equals("cut")){
 
@@ -395,21 +391,21 @@ public class Game
             if(command.getSecondWord().equals("still"))
             {
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
-                quit(command);
-               
+                wantToQuit = true;
+                return wantToQuit;
+            }
+            if(command.getSecondWord().equals("put")){
+               System.out.println("You caught rabies and died.");
+               wantToQuit = true;
+               return wantToQuit;
             }
         }
-=======
-        else if(commandWord.equals("stay")){
->>>>>>> FETCH_HEAD
-
-            if(command.getSecondWord().equals("still"))
-            {
-                playerDeath();
-                quit(command);
+        else if(commandWord.equals("kill")){
+            if(command.getSecondWord().equals("elfs")){
+                 System.out.println("You killed the elfs");
+                 System.out.println("Millions of children will be without a present this year...");
             }
         }
-        
         else if(commandWord.equals("kick")){
 
             if(command.getSecondWord().equals("ruderus"))
