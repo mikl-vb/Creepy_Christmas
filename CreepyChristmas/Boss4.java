@@ -7,7 +7,7 @@
  */
 public class Boss4 extends Boss
 {
-   private Boss Santa;
+    private Boss Santa;
 
     /**
      * Constructor for objects of class Boss4
@@ -28,9 +28,10 @@ public class Boss4 extends Boss
        System.out.println("You hit boss 4 and blah blah blah");
        super.kickBoss(command);
        
-       
-       
-       
+    }
+    
+    public void death(){
+        System.out.println("dead SANTA");
     }
 
     

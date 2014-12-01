@@ -1,34 +1,35 @@
 
+
 /**
  * Write a description of class Boss1Room here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Boss1Room extends Room
+public class Boss2Room extends Room
 {
 
-    public Boss1 Ruderus;
+    public Boss2 Riddler;
 
     
     /**
      * Constructor for objects of class SpecialRoomOffice
      */
-    public Boss1Room(String description)
+    public Boss2Room(String description)
     {
         super(description);
-        Ruderus = new Boss1(); 
+        Riddler = new Boss2(); 
     }
 
     public void grab(Command command)
     {
-        if(command.getSecondWord().equals("ruderus")){
+        if(command.getSecondWord().equals("riddler")){
             System.out.println("");
-            Room boss1Room = new Room("You are in boss 1s room.");
+            Room boss2Room = new Room("You are in boss 1s room.");
 
-            Game.currentRoom = boss1Room;
+            Game.currentRoom = boss2Room;
 
-            boss1Room.setExit("upstairs",Game.floor8);
+            boss2Room.setExit("upstairs",Game.floor8);
             changeDescription("***Change description...?***");
         }
         

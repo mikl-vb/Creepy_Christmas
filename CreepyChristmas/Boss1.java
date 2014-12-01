@@ -34,7 +34,7 @@ public class Boss1 extends Boss
     }
     
     public void death(){
-        System.out.println("dead boss 1");
+        System.out.println("Dead Ruderus");
     }
     
 }

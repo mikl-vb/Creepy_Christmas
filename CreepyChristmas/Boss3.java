@@ -7,7 +7,7 @@
  */
 public class Boss3 extends Boss
 {
-    private Boss Riddler;
+    private Boss riddler;
     
 
     /**
@@ -16,7 +16,7 @@ public class Boss3 extends Boss
     public Boss3()
     {
         super();
-        Riddler = new Boss();
+        riddler = new Boss();
     }
 
     public void getBoss3Info()
@@ -29,8 +29,9 @@ public class Boss3 extends Boss
        System.out.println("You hit boss 3 and blah blah blah");
        super.kickBoss(command);
        
-       
-       
-       
+    }
+    
+    public void death(){
+        System.out.println("Dead stickyClause");
     }
 }
