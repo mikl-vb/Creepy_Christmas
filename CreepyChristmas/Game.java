@@ -28,6 +28,7 @@ public class Game
 
 
     private Health playerHealth;
+    private Boolean playerDied; 
     //private int thisHealth;
 
     private Health bossHealth;
@@ -45,7 +46,6 @@ public class Game
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
 
-        playerHealth = new Health();
         
 
     }
@@ -177,13 +177,14 @@ public class Game
     public void play() 
     {            
         printWelcome();
-
+        playerHealth = new Health();
+        playerDied = false; 
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
 
         boolean finished = false;
-        while (! finished) {
-            Command command = parser.getCommand();
+        while (! finished && ! playerDied) {
+            Command command = parseretCommand();
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
@@ -376,5 +377,14 @@ public class Game
             return true;  // signal that we want to quit
         }
     }
-
+    
+    public boolean playerDeath()
+    {
+        
+            System.out.println("Oh dear... You are dead!");
+            playerDied = true;
+            return playerDied; 
+        
+        
+    }
 }
