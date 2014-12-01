@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class PlayerHealth here.
  * 
@@ -76,10 +75,6 @@ public class Health
     
     public void death(){
         System.out.println("Dead...");
-    }
-    
-    public void printHealth(){
-        
     }
     
     public void printHealth()
