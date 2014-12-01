@@ -26,7 +26,7 @@ public class Game
     public static Room floor8;
     public static Room floor9;
     public static Room floor10;
-    
+
     public static Object parcel;
 
     private Health health;
@@ -56,7 +56,6 @@ public class Game
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
 
-
         playerHealth = new Health();
         bossHealth1 = new Health();
         bossHealth2 = new Health();
@@ -67,7 +66,6 @@ public class Game
         thisBoss3 = new Boss3();
         thisBoss4 = new Boss4();
 
-
     }
 
     /**
@@ -75,15 +73,15 @@ public class Game
      */
     private void createObjects(){
         Object sword, swordDamage, parcel;
-        
+
         sword = new Object("A magical sword indeed...");
         swordDamage = new Object("Damage = 3");
         sword.setObject("sword", swordDamage);
-        
+
         parcel = new Object("***parcel with important information***");
         //parcel.setObject("");
     }
-    
+
     /**
      * Create all the rooms and link their exits together.
      */
@@ -216,21 +214,21 @@ public class Game
         while (!finished) { 
             Command command = parser.getCommand();
             finished = processCommand(command);
-<<<<<<< HEAD
-            if(playerHealth.getHealth() < 1){
-                  playerDeath();
-=======
-            if(playerHealth.getHealth() <1)
-            {
-                playerDeath();
-                quit(command);
->>>>>>> FETCH_HEAD
-            }
-            
-        }
 
-        System.out.println("Thank you for playing.  Good bye.");
-    }
+            if(playerHealth.getHealth() < 1){
+                playerDeath();
+
+                if(playerHealth.getHealth() <1)
+                {
+                    playerDeath();
+                    quit(command);
+
+                }
+
+            }
+
+            System.out.println("Thank you for playing.  Good bye.");
+        }}
 
     public void playWithFileInput1() 
     {            
@@ -353,7 +351,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Sticky Clause reduced your health by 1!");
                 playerHealth.printPlayerHealth();
-                
+
             }
             if(command.getSecondWord().equals("riddler"))
             {
@@ -463,7 +461,7 @@ public class Game
             }
 
         }
-        
+
         else if(commandWord.equals("grab")){
             if(command.getSecondWord().equals("bells")){
                 System.out.println("You grabbed the sleigh bells.");
@@ -553,7 +551,7 @@ public class Game
     {
         System.out.println("Oh dear... You are dead!");
         playerDied = true;
-    
+
         return playerDied; 
     }
 }
