@@ -31,6 +31,7 @@ public class Boss1 extends Boss
     {
        System.out.println("You hit boss 1 and blah blah blah");
        super.kickBoss(command);
+       
     }
     
     public void death(){

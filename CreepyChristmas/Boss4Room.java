@@ -24,11 +24,10 @@ public class Boss4Room extends Room
     {
         if(command.getSecondWord().equals("ruderus")){
             System.out.println("");
-            Room boss4Room = new Room("You are in boss 1s room.");
+            Room boss4Room = new Room("You are in SANTA room.");
 
             Game.currentRoom = boss4Room;
 
-            boss4Room.setExit("upstairs",Game.floor8);
             changeDescription("***Change description...?***");
         }
         

@@ -7,13 +7,9 @@ comment1.target=void\ kickBoss(Command)
 comment2.params=
 comment2.target=void\ hitPlayer()
 comment3.params=
-<<<<<<< HEAD
 comment3.target=void\ firstBossInfo()
 comment4.params=
 comment4.target=void\ bossDeath()
-=======
-comment3.target=void\ bossDeath()
-comment4.params=
-comment4.target=void\ death()
->>>>>>> 04654f18274a4183dc7baf47675c53e09a0e0b1e
-numComments=5
+comment5.params=
+comment5.target=void\ death()
+numComments=6
