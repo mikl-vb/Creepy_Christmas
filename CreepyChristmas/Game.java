@@ -27,8 +27,6 @@ public class Game
     public static Room floor9;
     public static Room floor10;
 
-
-
     private Health health;
     private int thisHealth;
 
@@ -72,19 +70,18 @@ public class Game
      * create objects
      * 
      * private void createObjects(){
-        Object sword, swordDamage, parcel;
+    Object sword, swordDamage, parcel;
 
-        sword = new Object("A magical sword indeed...");
-        //swordDamage = new Object("Damage = 3");
-        //sword.setObject("sword", swordDamage);
+    sword = new Object("A magical sword indeed...");
+    //swordDamage = new Object("Damage = 3");
+    //sword.setObject("sword", swordDamage);
 
-        parcel = new Object("***parcel with important information***");
-        //parcel.setObject("");
+    parcel = new Object("***parcel with important information***");
+    //parcel.setObject("");
     }
      * 
      * 
      */
-    
 
     /**
      * Create all the rooms and link their exits together.
@@ -123,7 +120,6 @@ public class Game
             "You will know what to do when you are at peace.\n" +
             "Yes, strength is needed at times, but with a little more knowledge soul will increase.\n");
 
-            
         floor3 = new Room("\n" + "Floor 3:\n Raging Elf Room \n" +
             "   You walk into a room and you notice that it was the same room you \n" +
             "built many toys in. You hear sounds in a distance..... A low rumble. \n" +
@@ -149,21 +145,19 @@ public class Game
             "Christmas trees....... ON FIRE! \n" +
             "\n" +
             "Commands: cut trees, throw milk, run away, stay still");
-            
-           
 
-        floor6 = new Room("\n" + "Floor 6:\n Raging Elfs (Part 2) Room \n" +
+        floor6 = new Room("\n" + "Floor 6:\n Raging Elves (Part 2) Room \n" +
             "   You look forward and see a grand hallway with high crystal \n" +
             "chandeliers, lined as if they were a path of stars. You take a step \n" +
             "forward until when at the end of the hall, you hear a rumbling coming \n" +
             "towards you. You pull out your sword..... Choose a move. \n" +
             "\n" +
-            "Commands: kill elfs, stay put");
+            "Commands: kill elves, stay put");
 
         /**
          * boss1Room is the marker of the boss levels
          */ 
-            
+
         boss1Room = new Room("\n" + "Floor 7:\n Three Headed Reindeer - Ruderus Room \n" +
             "   You step forward and hear a loud crack beneath your feet. You \n" +
             "look down to see that your foot just pressed through an elf skull. \n" +
@@ -174,7 +168,6 @@ public class Game
             "turns around and looks you face to face. \n" +
             "There, the Three-Headed Reindeer speaks..... \n" +
             "'Hello, I am Ruderus, the gatekeeper. You are my next MEAL! HAHAHA!'");
-
 
         floor8 = new Room("\n" + "Room 8:\n Riddle Room 2 \n" +
             "Riddler: 'Hello Small One, \n" + 
@@ -205,8 +198,6 @@ public class Game
             "The Riddler is now flying talon first towards you!\n" +
             "Defend yourself hero!");
 
-
-
         floor9 = new Room("\n" + "Floor 9:\n Ms. Sticky Clause Room \n" +
             "You smell something that reminds you of a warm Christmas morning. \n" +
             "The smell is rich, sweet, and enticing that it pulls you deeper \n" +
@@ -228,7 +219,7 @@ public class Game
         elevator = new Room("The elevator... \n You take the elevator to the 2nd floor.");
         // initialise room exits
         floor2.setExit("upstairs", floor3);
-        
+
         floor3.setExit("downstairs", floor2);
         floor3.setExit("upstairs",floor4);
 
@@ -283,30 +274,48 @@ public class Game
 
             }
 
+<<<<<<< HEAD
             
             
             
+=======
+            if(bossHealth1.getHealth() <1)
+            {
+                thisBoss1.death();
+                break;
+            }
+
+            if(bossHealth2.getHealth() <1)
+            {
+                thisBoss2.death();
+                break;
+            }
+
+            if(bossHealth3.getHealth() <1)
+            {
+                thisBoss3.death();
+                break;
+            }
+
+            if(bossHealth4.getHealth() <1)
+            {
+                thisBoss4.death();
+               // quit(command);
+            }
+>>>>>>> FETCH_HEAD
         }
-        
+
         System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
+<<<<<<< HEAD
                 "/n" + "You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
         
+=======
+            "/n You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
+>>>>>>> FETCH_HEAD
 
         System.out.println("Thank you for playing. Good bye.");
+
     }
-
-
-
-
-
- 
-
-
-        
-
-
-
-
 
     public void playWithFileInput1() 
     {            
@@ -403,27 +412,25 @@ public class Game
             wantToQuit = quit(command);
         }
 
-        
         else if(commandWord.equals("cut")){
-
             if(command.getSecondWord().equals("trees"))
             {
-               System.out.println("You just ruined millions of childrens' Christmas trees!!");
-               
+                System.out.println("You just ruined millions of childrens' Christmas trees!!");
+
             }
-            
+
         }
-            
-           else if(commandWord.equals("throw")){
+
+        else if(commandWord.equals("throw")){
 
             if(command.getSecondWord().equals("milk"))
             {
-               System.out.println("You just saved millions of childrens' Christmas trees!!");
-               
+                System.out.println("You just saved millions of childrens' Christmas trees!!");
+
             }
         }
-            
-            else if(commandWord.equals("stay")){
+
+        else if(commandWord.equals("stay")){
 
             if(command.getSecondWord().equals("still"))
             {
@@ -432,33 +439,31 @@ public class Game
                 playerDeath();
                 wantToQuit = true;
                 return wantToQuit;
-               
+
             }
-       
 
             if(command.getSecondWord().equals("put"))
             {
                 playerDeath();
 
-                
-
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
-
                 System.out.println("You caught rabies...");
 
+                System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
+                System.out.println("You caught rabies...");
                 wantToQuit = true;
                 return wantToQuit;
             }
             if(command.getSecondWord().equals("put")){
-               System.out.println("You caught rabies and died.");
-               wantToQuit = true;
-               return wantToQuit;
+                System.out.println("You caught rabies and died.");
+                wantToQuit = true;
+                return wantToQuit;
             }
         }
         else if(commandWord.equals("kill")){
             if(command.getSecondWord().equals("elves")){
-                 System.out.println("You killed the elfs");
-                 System.out.println("Millions of children will be without a present this year...");
+                System.out.println("You killed the elfs");
+                System.out.println("Millions of children will be without a present this year...");
 
             }
         }
@@ -663,9 +668,7 @@ public class Game
 
     }
 
-
     // implementations of user commands:
-
     /**
      * Print out some help information.
      * Here we print some stupid, cryptic message and a list of the 
@@ -734,6 +737,5 @@ public class Game
 
         return playerDied; 
     }
-    
-   
+
 }

@@ -15,12 +15,7 @@ public class CommandWords
     private static final String[] validCommands = {
 
 
-
-
-
-
-
-        "go", "quit", "help", "grab", "forward ", "kick", "slash", "run", "stay", "still", "cut", "kill", "throw"
+        "go", "quit", "help", "grab", "forward ", "kick", "slash", "run", "stay", "still", "kill", "cut", "throw"
 
     };
     
