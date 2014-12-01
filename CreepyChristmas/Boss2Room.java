@@ -9,7 +9,7 @@
 public class Boss2Room extends Room
 {
 
-    public Boss2 Riddler;
+    public Boss2 stickyClause;
 
     
     /**
@@ -18,14 +18,14 @@ public class Boss2Room extends Room
     public Boss2Room(String description)
     {
         super(description);
-        Riddler = new Boss2(); 
+        stickyClause = new Boss2(); 
     }
 
     public void grab(Command command)
     {
-        if(command.getSecondWord().equals("riddler")){
+        if(command.getSecondWord().equals("stickyclause")){
             System.out.println("");
-            Room boss2Room = new Room("You are in boss 1s room.");
+            Room boss2Room = new Room("You are in boss 2s room.");
 
             Game.currentRoom = boss2Room;
 
