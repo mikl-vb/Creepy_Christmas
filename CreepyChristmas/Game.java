@@ -21,7 +21,7 @@ public class Game
     public static Room currentRoom;
     public static Room elevator;
     public static Room floor2;
-    
+
     public static Room floor7;    
     public static Room floor8;
     public static Room floor9;
@@ -30,15 +30,13 @@ public class Game
     private Health health;
     private int thisHealth;
 
-
     private Health playerHealth;
     private Boolean playerDied; 
     //private int thisHealth;
 
     private Health bossHealth;
-    
-    private Boss thisBoss1;
 
+    private Boss thisBoss1;
 
     /**
      * Create the game and initialise its internal map.
@@ -50,7 +48,6 @@ public class Game
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
 
-        
 
     }
 
@@ -67,7 +64,6 @@ public class Game
             "there are no exits. \n Grab the coal, sleigh bells, or milk" +
             "\n Commands: grab... coal, bells, or  milk");
 
-            
         floor2 = new Room("\n" + "Room 2:\n Riddle Room \n" +
             "   A burst of light fades away as you come to realize that you are \n" +
             "in a new room. You look around and see large hall that you haven’t \n" +
@@ -75,7 +71,7 @@ public class Game
             "and snowflakes falling from the void above. Before you is an owl \n" +
             "whose feathers are as white as the snow around you, and the size \n" +
             "of two men");
-            
+
         floor3 = new Room("\n" + "Room 3:\n Raging Elf Room \n" +
             "   You walk into a room and you notice that it was the same room you \n" +
             "built many toys in. You hear sounds in a distance..... A low rumble. \n" +
@@ -86,13 +82,13 @@ public class Game
             "from their mouths \n" +
             "\n" +
             "Commands: go forward, run away, or stay still");
-        
+
         floor4 = new Room("\n" + "Room 4:\n The Sword in the Snow Room \n" +
             "   You stand up and look around. In total darkness with the exception \n" +
             "of a hole in the ceiling where a ray of light pours onto the ground. \n" +
             "In the dirt, you see something shining. You reach to pick it up, you \n" +
             "notice it is very warm and light..... It is a SWORD");
-        
+
         floor5 = new Room("\n" + "Room 5:\n Burning Christmas Tree Room \n" +
             "   Your eyes squinch as they are hit by a haze of smoke. The foul air \n" +
             "fills your lungs and you begin to cough. As you are swinging your \n" +
@@ -101,7 +97,7 @@ public class Game
             "Christmas trees....... ON FIRE! \n" +
             "\n" +
             "Commands: cut trees, throw milk, run away, stay still");
-        
+
         floor6 = new Room("\n" + "Room 6:\n Raging Elf (Part 2) Room \n" +
             "   You look forward and see a grand hallway with high crystal \n" +
             "chandeliers, lined as if they were a path of stars. You take a step \n" +
@@ -109,7 +105,7 @@ public class Game
             "towards you. You pull out your sword..... Choose a move: \n" +
             "\n" +
             "Commands: slash, kick, run backwards, don't move");
-        
+
         boss1Room = new Room("\n" + "Room 7:\n Three Headed Reindeer - Ruderus Room \n" +
             "   You step forward and hear a loud crack beneath your feet. You \n" +
             "look down to see that your foot just pressed through an elf skull. \n" +
@@ -120,11 +116,11 @@ public class Game
             "turns around and looks you face to face. \n" +
             "There, the Three-Headed Reindeer speaks..... \n" +
             "'Hello, I am Ruderus, the gatekeeper. You are my next MEAL! HAHAHA!'");
-        
+
         floor8 = new Room("\n" + "Room 8:\n Riddle Room 2 \n" +
             "Riddler: 'Hello Small One, it seems as if a certain little elf has \n" +
             "          gotten himself into a lot of trouble recently'");
-        
+
         floor9 = new Room("\n" + "Room 9:\n Ms. Sticky Clause Room \n" +
             "You smell something that reminds you of a warm Christmas morning. \n" +
             "The smell is rich, sweet, and enticing that it pulls you deeper \n" +
@@ -143,9 +139,7 @@ public class Game
             "different directions. \n" +
             "There, you see Santa. Possessed, with dark force powers");
 
-
         elevator = new Room("The elevator... \n You take the elevator to the 5th floor.");
-
         // initialise room exits
         floor2.setExit("upstairs", floor3);
         floor3.setExit("downstairs", floor2);
@@ -186,8 +180,8 @@ public class Game
         // execute them until the game is over.
 
         boolean finished = false;
-        while (! finished && ! playerDied) {
-            Command command = parseretCommand();
+        while (!finished && !playerDied) { 
+            Command command = parser.getCommand();
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
@@ -284,18 +278,14 @@ public class Game
             wantToQuit = quit(command);
         }
 
-        
         else if(commandWord.equals("kick")){
-           thisBoss1 = new Boss1();
-           thisBoss1.kickBoss(command);
-           ;
+            thisBoss1 = new Boss1();
+            thisBoss1.kickBoss(command);
+            ;
         }
-         
-           
-        
 
+        
         else if(commandWord.equals("grab")){
-            
             if(command.getSecondWord().equals("bells")){
                 System.out.println("You grabbed the sleigh bells.");
 
@@ -314,7 +304,7 @@ public class Game
         }
         // else command not recognised.
         return wantToQuit;
-        
+
     }
 
     // implementations of user commands:
@@ -335,9 +325,9 @@ public class Game
 
     private void press(Command command)
     {
-        
+
     }
-    
+
     /** 
      * Try to in to one direction. If there is an exit, enter the new
      * room, otherwise print an error message.
@@ -364,7 +354,6 @@ public class Game
         }
     }
 
-
     /** 
      * "Quit" was entered. Check the rest of the command to see
      * whether we really quit the game.
@@ -380,14 +369,13 @@ public class Game
             return true;  // signal that we want to quit
         }
     }
-    
+
     public boolean playerDeath()
     {
-        
-            System.out.println("Oh dear... You are dead!");
-            playerDied = true;
-            return playerDied; 
-        
-        
+
+        System.out.println("Oh dear... You are dead!");
+        playerDied = true;
+        return playerDied; 
+
     }
 }

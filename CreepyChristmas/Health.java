@@ -77,12 +77,7 @@ public class Health
            
         }
     }
-<<<<<<< HEAD
-    
-  
-=======
 
->>>>>>> origin/master
     public void printHealth()
     {
         System.out.println("Health:" + getHealth());
