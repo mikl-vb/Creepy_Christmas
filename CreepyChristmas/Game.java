@@ -76,10 +76,11 @@ public class Game
      * create objects
      */
     private void createObjects(){
-        Object sword, parcel;
+        Object sword, swordDamage, parcel;
         
         sword = new Object("A magical sword indeed...");
-        //sword.setObject("sword", 3);
+        swordDamage = new Object("Damage = 3");
+        sword.setObject("sword", swordDamage);
         
         parcel = new Object("***parcel with important information***");
         //parcel.setObject("");
