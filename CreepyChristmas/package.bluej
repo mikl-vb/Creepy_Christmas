@@ -78,21 +78,12 @@ dependency9.from=ParserWithFileInput
 dependency9.to=ReadFile
 dependency9.type=UsesDependency
 objectbench.height=76
-<<<<<<< HEAD
 objectbench.width=1346
 package.editor.height=571
 package.editor.width=1248
 package.editor.x=-8
 package.editor.y=-8
-package.numDependencies=24
-=======
-objectbench.width=1342
-package.editor.height=621
-package.editor.width=1234
-package.editor.x=310
-package.editor.y=64
 package.numDependencies=26
->>>>>>> origin/master
 package.numTargets=16
 package.showExtends=true
 package.showUses=true
@@ -101,17 +92,10 @@ readme.editor.height=666
 readme.editor.width=839
 readme.editor.x=0
 readme.editor.y=22
-<<<<<<< HEAD
 target1.editor.height=728
 target1.editor.width=683
 target1.editor.x=0
 target1.editor.y=0
-=======
-target1.editor.height=873
-target1.editor.width=755
-target1.editor.x=685
-target1.editor.y=23
->>>>>>> origin/master
 target1.height=50
 target1.name=Health
 target1.naviview.expanded=false
@@ -136,13 +120,8 @@ target10.x=600
 target10.y=380
 target11.editor.height=780
 target11.editor.width=938
-<<<<<<< HEAD
-target11.editor.x=2
-target11.editor.y=116
-=======
 target11.editor.x=108
 target11.editor.y=53
->>>>>>> origin/master
 target11.height=60
 target11.name=Game
 target11.naviview.expanded=false
@@ -204,7 +183,7 @@ target15.typeParameters=
 target15.width=80
 target15.x=360
 target15.y=340
-target16.editor.height=873
+target16.editor.height=780
 target16.editor.width=874
 target16.editor.x=-6
 target16.editor.y=23
@@ -217,17 +196,10 @@ target16.typeParameters=
 target16.width=100
 target16.x=310
 target16.y=150
-<<<<<<< HEAD
-target2.editor.height=728
-target2.editor.width=683
-target2.editor.x=683
-target2.editor.y=0
-=======
-target2.editor.height=873
+target2.editor.height=780
 target2.editor.width=720
 target2.editor.x=720
 target2.editor.y=23
->>>>>>> origin/master
 target2.height=50
 target2.name=CommandWords
 target2.naviview.expanded=false
@@ -237,17 +209,10 @@ target2.typeParameters=
 target2.width=110
 target2.x=430
 target2.y=510
-<<<<<<< HEAD
-target3.editor.height=728
-target3.editor.width=683
-target3.editor.x=683
-target3.editor.y=0
-=======
-target3.editor.height=873
+target3.editor.height=780
 target3.editor.width=720
 target3.editor.x=720
 target3.editor.y=23
->>>>>>> origin/master
 target3.height=50
 target3.name=ParserWithFileInput
 target3.naviview.expanded=false
@@ -276,10 +241,7 @@ target5.editor.x=89
 target5.editor.y=87
 target5.height=50
 target5.name=Parser
-<<<<<<< HEAD
 target5.naviview.expanded=true
-=======
->>>>>>> origin/master
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
@@ -288,13 +250,8 @@ target5.x=110
 target5.y=10
 target6.editor.height=873
 target6.editor.width=720
-<<<<<<< HEAD
-target6.editor.x=720
-target6.editor.y=23
-=======
 target6.editor.x=213
 target6.editor.y=34
->>>>>>> origin/master
 target6.height=50
 target6.name=Boss3
 target6.naviview.expanded=false
@@ -304,15 +261,9 @@ target6.typeParameters=
 target6.width=80
 target6.x=690
 target6.y=380
-<<<<<<< HEAD
-target7.editor.height=780
-target7.editor.width=720
-target7.editor.x=720
-=======
 target7.editor.height=873
 target7.editor.width=720
 target7.editor.x=0
->>>>>>> origin/master
 target7.editor.y=23
 target7.height=50
 target7.name=Boss4
@@ -323,17 +274,10 @@ target7.typeParameters=
 target7.width=80
 target7.x=780
 target7.y=380
-<<<<<<< HEAD
-target8.editor.height=744
-target8.editor.width=1378
-target8.editor.x=-8
+target8.editor.height=728
+target8.editor.width=683
+target8.editor.x=683
 target8.editor.y=0
-=======
-target8.editor.height=873
-target8.editor.width=720
-target8.editor.x=720
-target8.editor.y=23
->>>>>>> origin/master
 target8.height=50
 target8.name=Boss
 target8.naviview.expanded=false

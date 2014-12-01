@@ -5,11 +5,9 @@ comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Boss\r\n
 comment1.params=command
 comment1.target=void\ hitBoss(Command)
 comment2.params=
-comment2.target=void\ firstBossInfo()
+comment2.target=void\ hitPlayer()
 comment3.params=
-<<<<<<< HEAD
-comment3.target=void\ bossDeath()
-=======
-comment3.target=void\ death()
->>>>>>> origin/master
-numComments=4
+comment3.target=void\ firstBossInfo()
+comment4.params=
+comment4.target=void\ bossDeath()
+numComments=5

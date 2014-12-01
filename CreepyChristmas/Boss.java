@@ -11,8 +11,8 @@ public class Boss
     // instance variables - replace the example below with your own
     public Health bossHealth;
     public Health playerHealth;
-    public Health Dead;
-    
+    private Boolean dead;
+
     
 
 
@@ -24,12 +24,12 @@ public class Boss
     public Boss()
     {
         bossHealth = new Health();
-<<<<<<< HEAD
-=======
+        dead = false; 
+
         
 
         
->>>>>>> origin/master
+
 
         
 
@@ -38,41 +38,53 @@ public class Boss
 
     public void hitBoss(Command command)
     {
-<<<<<<< HEAD
-        bossHealth.reduceHealth();
-        
-=======
+          if(dead == true)
+          {
+            System.out.println("Your foe has already fallen. Time to move on.");
+            return; 
+            
+            
+            }
+          
           bossHealth.reduceHealth(); 
+          if(bossHealth.getHealth() < 1)
+          {
+            bossDeath(); 
+            
+            
+            }
           bossHealth.printHealth();
->>>>>>> origin/master
+          
+          
     }
     
+    public void hitPlayer()
+    {
+        playerHealth.reduceHealth();
+        System.out.println("That hurt...Your health has dropped by 1!");
+    
+    }
 
+    
+    
      public void firstBossInfo(){
-<<<<<<< HEAD
-  
-=======
-      
-        
->>>>>>> origin/master
+
         
 
     }
-    
-<<<<<<< HEAD
+
     public void bossDeath()
     {
-        bossHealth.death();
+        System.out.println("Dead Boss...");
+
+        
         
     
     }
    
-=======
-    public void death(){
-        System.out.println("Dead Boss...");
-    }
 
->>>>>>> origin/master
+    
+
    }
     //Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms
     // boss room subclass of room. 

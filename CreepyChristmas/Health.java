@@ -10,7 +10,8 @@ public class Health
     // instance variables - replace the example below with your own
     private int health;
     private String healthDescription;
-    private Boolean dead;
+ 
+
     
     /**
      * Constructor for objects of class Health
@@ -18,7 +19,7 @@ public class Health
     public Health(){
         health = 10;
         healthDescription = getHealthDescription(health);
-        dead = false;
+     
         
     }
 
@@ -71,24 +72,20 @@ public class Health
     public void reduceHealth()
     {
        health = health -1;
-       
+       if(health < 1)
+       {
+           return;
+           
+        }
     }
     
-<<<<<<< HEAD
-    public boolean death(){
-        return true; 
-=======
-    public void death(){
-        System.out.println("Dead...");
-    }
+   
     
-    public void printHealth(){
-        
-    }
+
     
     public void printHealth()
     {
         System.out.println("Health:" + getHealth());
->>>>>>> origin/master
+
     }
-}
+    }
