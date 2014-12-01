@@ -36,9 +36,15 @@ public class Game
     private Boolean playerDied; 
     //private int thisHealth;
 
-    private Health bossHealth;
+    private Health bossHealth1;
+    private Health bossHealth2;
+    private Health bossHealth3;
+    private Health bossHealth4;
 
-    private Boss thisBoss1;
+    private Boss1 thisBoss1;
+    private Boss2 thisBoss2;
+    private Boss3 thisBoss3;
+    private Boss4 thisBoss4;
 
     /**
      * Create the game and initialise its internal map.
@@ -53,8 +59,14 @@ public class Game
 
 
         playerHealth = new Health();
-        bossHealth = new Health();
+        bossHealth1 = new Health();
+        bossHealth2 = new Health();
+        bossHealth3 = new Health();
+        bossHealth4 = new Health();
         thisBoss1 = new Boss1();
+        thisBoss2 = new Boss2();
+        thisBoss3 = new Boss3();
+        thisBoss4 = new Boss4();
         
 
 
@@ -306,15 +318,46 @@ public class Game
 
         else if(commandWord.equals("kick")){
 
-            thisBoss1 = new Boss1();
-            thisBoss1.kickBoss(command);
-            ;
-
            if(command.getSecondWord().equals("ruderus"))
-           {thisBoss1 = new Boss1();
-               bossHealth.reduceHealth();
-               bossHealth.reduceHealth();
-               bossHealth.printHealth();
+           {
+               thisBoss1.whenKicked();
+               bossHealth1.reduceHealth();
+               bossHealth1.reduceHealth();
+               bossHealth1.printHealth();
+           
+        }
+        if(command.getSecondWord().equals("stickyclause"))
+           {
+               thisBoss2.whenKicked();
+               bossHealth2.reduceHealth();
+               bossHealth2.reduceHealth();
+               bossHealth2.reduceHealth();
+               bossHealth2.reduceHealth();
+               
+               bossHealth2.printHealth();
+           
+        }
+         if(command.getSecondWord().equals("riddler"))
+           {
+               thisBoss3.whenKicked();
+               bossHealth3.reduceHealth();
+               bossHealth3.reduceHealth();
+               bossHealth3.reduceHealth();
+               bossHealth3.reduceHealth();
+               
+               bossHealth3.printHealth();
+           
+        }
+        
+         if(command.getSecondWord().equals("santa"))
+           {
+               thisBoss4.whenKicked();
+               bossHealth4.reduceHealth();
+               bossHealth4.reduceHealth();
+               bossHealth4.reduceHealth();
+               bossHealth4.reduceHealth();
+               
+               bossHealth4.printHealth();
            
         }
         }
@@ -322,13 +365,46 @@ public class Game
         else if(commandWord.equals("slash")){
             if(command.getSecondWord().equals("ruderus"))
             {
-                thisBoss1 = new Boss1();
-                bossHealth.reduceHealth();
-                bossHealth.reduceHealth();
-                bossHealth.reduceHealth();
-                bossHealth.reduceHealth();
-                bossHealth.printHealth();
+                thisBoss1.whenSlashed();
+                bossHealth1.reduceHealth();
+                bossHealth1.reduceHealth();
+                bossHealth1.reduceHealth();
+                bossHealth1.reduceHealth();
+                bossHealth1.printHealth();
             }
+             if(command.getSecondWord().equals("stickyclause"))
+           {
+               thisBoss2.whenSlashed();
+               bossHealth2.reduceHealth();
+               bossHealth2.reduceHealth();
+               bossHealth2.reduceHealth();
+               bossHealth2.reduceHealth();
+               
+               bossHealth2.printHealth();
+           
+        }
+         if(command.getSecondWord().equals("riddler"))
+           {
+               thisBoss3.whenSlashed();
+               bossHealth3.reduceHealth();
+               bossHealth3.reduceHealth();
+               bossHealth3.reduceHealth();
+               bossHealth3.reduceHealth();
+               
+               bossHealth3.printHealth();
+           
+        }
+         if(command.getSecondWord().equals("santa"))
+           {
+               thisBoss4.whenSlashed();
+               bossHealth4.reduceHealth();
+               bossHealth4.reduceHealth();
+               bossHealth4.reduceHealth();
+               bossHealth4.reduceHealth();
+               
+               bossHealth4.printHealth();
+           
+        }
             
 
         }
