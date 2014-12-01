@@ -216,7 +216,7 @@ public class Game
         while (!finished) { 
             Command command = parser.getCommand();
             finished = processCommand(command);
-            if(thisHealth < 1){
+            if(playerHealth.getHealth() < 1){
                   playerDeath();
             }
         }
