@@ -21,13 +21,13 @@ public class Game
     public static Room currentRoom;
     public static Room elevator;
     public static Room floor2;
-
+    private static Room floor4;
     public static Room floor7;    
     public static Room floor8;
     public static Room floor9;
     public static Room floor10;
-    
-    public static Object parcel;
+
+
 
     private Health health;
     private int thisHealth;
@@ -56,7 +56,6 @@ public class Game
         parser = new Parser();
         parserWithFileInput = new ParserWithFileInput();
 
-
         playerHealth = new Health();
         bossHealth1 = new Health();
         bossHealth2 = new Health();
@@ -67,23 +66,26 @@ public class Game
         thisBoss3 = new Boss3();
         thisBoss4 = new Boss4();
 
-
     }
 
     /**
      * create objects
-     */
-    private void createObjects(){
+     * 
+     * private void createObjects(){
         Object sword, swordDamage, parcel;
-        
+
         sword = new Object("A magical sword indeed...");
-        swordDamage = new Object("Damage = 3");
-        sword.setObject("sword", swordDamage);
-        
+        //swordDamage = new Object("Damage = 3");
+        //sword.setObject("sword", swordDamage);
+
         parcel = new Object("***parcel with important information***");
         //parcel.setObject("");
     }
+     * 
+     * 
+     */
     
+
     /**
      * Create all the rooms and link their exits together.
      */
@@ -97,7 +99,7 @@ public class Game
             "there are no exits. \n Grab the coal, sleigh bells, or milk" +
             "\n Commands: grab... coal, bells, or  milk");
 
-        floor2 = new Room("\n" + "Room 2:\n Riddle Room \n" +
+        floor2 = new Room("\n" + "Floor 2:\n Riddle Room \n" +
             "   A burst of light fades away as you come to realize that you are \n" +
             "in a new room. You look around and see large hall that you haven’t \n" +
             "noticed before, a black ceiling that seems to be slowly moving, \n" +
@@ -105,7 +107,8 @@ public class Game
             "whose feathers are as white as the snow around you, and the size \n" +
             "of two men");
 
-        floor3 = new Room("\n" + "Room 3:\n Raging Elf Room \n" +
+            
+        floor3 = new Room("\n" + "Floor 3:\n Raging Elf Room \n" +
             "   You walk into a room and you notice that it was the same room you \n" +
             "built many toys in. You hear sounds in a distance..... A low rumble. \n" +
             "The rumble grows louder and louder until you recognize many of the \n" +
@@ -114,15 +117,15 @@ public class Game
             "weeks, skin is pale as snow, and streams of white foam are coming \n" +
             "from their mouths \n" +
             "\n" +
-            "Commands: go forward, run away, or stay still");
+            "Commands: go upstairs or stay still ");
 
-        floor4 = new Room("\n" + "Room 4:\n The Sword in the Snow Room \n" +
+        floor4 = new Room("\n" + "Floor 4:\n The Sword in the Snow Room \n" +
             "   You stand up and look around. In total darkness with the exception \n" +
             "of a hole in the ceiling where a ray of light pours onto the ground. \n" +
             "In the dirt, you see something shining. You reach to pick it up, you \n" +
             "notice it is very warm and light..... It is a SWORD");
 
-        floor5 = new Room("\n" + "Room 5:\n Burning Christmas Tree Room \n" +
+        floor5 = new Room("\n" + "Floor 5:\n Burning Christmas Tree Room \n" +
             "   Your eyes squinch as they are hit by a haze of smoke. The foul air \n" +
             "fills your lungs and you begin to cough. As you are swinging your \n" +
             "hands around and feel nothing, you hear a symphony of crackling. You \n" +
@@ -133,7 +136,7 @@ public class Game
             
            
 
-        floor6 = new Room("\n" + "Room 6:\n Raging Elf (Part 2) Room \n" +
+        floor6 = new Room("\n" + "Floor 6:\n Raging Elf (Part 2) Room \n" +
             "   You look forward and see a grand hallway with high crystal \n" +
             "chandeliers, lined as if they were a path of stars. You take a step \n" +
             "forward until when at the end of the hall, you hear a rumbling coming \n" +
@@ -141,7 +144,11 @@ public class Game
             "\n" +
             "Commands: slash, kick, run backwards, don't move");
 
-        boss1Room = new Room("\n" + "Room 7:\n Three Headed Reindeer - Ruderus Room \n" +
+        /**
+         * boss1Room is the marker of the boss levels
+         */ 
+            
+        boss1Room = new Room("\n" + "Floor 7:\n Three Headed Reindeer - Ruderus Room \n" +
             "   You step forward and hear a loud crack beneath your feet. You \n" +
             "look down to see that your foot just pressed through an elf skull. \n" +
             "This room is full of scattered elf skeletons with deep red glow \n" +
@@ -152,11 +159,11 @@ public class Game
             "There, the Three-Headed Reindeer speaks..... \n" +
             "'Hello, I am Ruderus, the gatekeeper. You are my next MEAL! HAHAHA!'");
 
-        floor8 = new Room("\n" + "Room 8:\n Riddle Room 2 \n" +
+        floor8 = new Room("\n" + "Floor 8:\n Riddle Room 2 \n" +
             "Riddler: 'Hello Small One, it seems as if a certain little elf has \n" +
             "          gotten himself into a lot of trouble recently'");
 
-        floor9 = new Room("\n" + "Room 9:\n Ms. Sticky Clause Room \n" +
+        floor9 = new Room("\n" + "Floor 9:\n Ms. Sticky Clause Room \n" +
             "You smell something that reminds you of a warm Christmas morning. \n" +
             "The smell is rich, sweet, and enticing that it pulls you deeper \n" +
             "into the room. As you try to move forward, you realize that your \n" +
@@ -177,6 +184,7 @@ public class Game
         elevator = new Room("The elevator... \n You take the elevator to the 2nd floor.");
         // initialise room exits
         floor2.setExit("upstairs", floor3);
+        
         floor3.setExit("downstairs", floor2);
         floor3.setExit("upstairs",floor4);
 
@@ -218,11 +226,19 @@ public class Game
         while (!finished) { 
             Command command = parser.getCommand();
             finished = processCommand(command);
-            if(playerHealth.getHealth() <1)
-            {
+
+            if(playerHealth.getHealth() < 1){
                 playerDeath();
-                quit(command);
+
+                if(playerHealth.getHealth() <1)
+                {
+                    playerDeath();
+                    quit(command);
+
+                }
+
             }
+<<<<<<< HEAD
             if(bossHealth1.getHealth() <1)
             {
                 thisBoss1.death();
@@ -250,6 +266,14 @@ public class Game
 
         System.out.println("Thank you for playing. Good bye.");
     }
+=======
+
+        }
+
+
+            System.out.println("Thank you for playing.  Good bye.");
+        }
+>>>>>>> FETCH_HEAD
 
     public void playWithFileInput1() 
     {            
@@ -292,6 +316,10 @@ public class Game
         boolean finished = false;
         while (! finished) {
             Command command = parserWithFileInput.getCommandForCommands3();
+            if(playerHealth.getHealth() == 0)
+            {
+                playerDeath();
+            }
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
@@ -341,6 +369,7 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
+<<<<<<< HEAD
         
         else if(commandWord.equals("cut")){
 
@@ -370,7 +399,17 @@ public class Game
                
             }
         }
+=======
+        else if(commandWord.equals("stay")){
+>>>>>>> FETCH_HEAD
 
+            if(command.getSecondWord().equals("still"))
+            {
+                playerDeath();
+                quit(command);
+            }
+        }
+        
         else if(commandWord.equals("kick")){
 
             if(command.getSecondWord().equals("ruderus"))
@@ -401,7 +440,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Sticky Clause reduced your health by 1!");
                 playerHealth.printPlayerHealth();
-                
+
             }
             if(command.getSecondWord().equals("riddler"))
             {
@@ -511,7 +550,7 @@ public class Game
             }
 
         }
-        
+
         else if(commandWord.equals("grab")){
             if(command.getSecondWord().equals("bells")){
                 System.out.println("You grabbed the sleigh bells.");
@@ -602,7 +641,7 @@ public class Game
     {
         System.out.println("Oh dear... You are dead!");
         playerDied = true;
-    
+
         return playerDied; 
     }
     

@@ -10,6 +10,7 @@ public class Object
 {
     private String description;
     private HashMap<String, Object> objects;        // stores exits of this room.
+     
 
     /**
      * Create a room described "description". Initially, it has
@@ -20,7 +21,7 @@ public class Object
     public Object(String description) 
     {
         this.description = description;
-        objects = new HashMap<String, Object>();
+       objects = new HashMap<String, Object>();
 
     }
 
