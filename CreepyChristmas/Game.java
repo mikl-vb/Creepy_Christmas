@@ -279,35 +279,19 @@ public class Game
             
             
 
-            if(bossHealth1.getHealth() <1)
-            {
-                thisBoss1.death();
-                break;
-            }
-
-            if(bossHealth2.getHealth() <1)
-            {
-                thisBoss2.death();
-                break;
-            }
-
-            if(bossHealth3.getHealth() <1)
-            {
-                thisBoss3.death();
-                break;
-            }
-
-            if(bossHealth4.getHealth() <1)
-            {
-                thisBoss4.death();
-               // quit(command);
-            }
-
+           
         }
 
+<<<<<<< HEAD
         System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
 
                 "/n" + "You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
+=======
+        
+        
+
+
+>>>>>>> FETCH_HEAD
 
 
         System.out.println("Thank you for playing. Good bye.");
@@ -479,6 +463,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Ruderus reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth1.getHealth() < 1)
                 {
@@ -499,6 +484,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Sticky Clause reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth2.getHealth() < 1)
                 {
@@ -520,6 +506,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("The Riddler reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                  if(bossHealth3.getHealth() < 1)
                 {
@@ -542,6 +529,7 @@ public class Game
                 
                 System.out.println("Santa reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                  if(bossHealth4.getHealth() < 1)
                 {
@@ -567,6 +555,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Ruderus reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth1.getHealth() < 1)
                 {
@@ -588,6 +577,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Sticky Clause reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth2.getHealth() < 1)
                 {
@@ -609,6 +599,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("The Riddler reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth3.getHealth() < 1)
                 {
@@ -632,11 +623,15 @@ public class Game
                 playerHealth.reduceHealth();
                 
                 System.out.println("Santa reduced your health by 1!");
-                playerHealth.printPlayerHealth();
+                
+                System.out.println();
                 
                 if(bossHealth4.getHealth() < 1)
                 {
                     thisBoss4.death();
+                    System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
+
+                "/n" + "You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
                 }
 
             }
