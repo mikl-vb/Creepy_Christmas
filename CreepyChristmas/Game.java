@@ -282,16 +282,12 @@ public class Game
            
         }
 
-<<<<<<< HEAD
-        System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
 
-                "/n" + "You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
-=======
         
         
 
 
->>>>>>> FETCH_HEAD
+
 
 
         System.out.println("Thank you for playing. Good bye.");
@@ -396,7 +392,7 @@ public class Game
         else if(commandWord.equals("cut")){
             if(command.getSecondWord().equals("trees"))
             {
-                System.out.println("You just ruined millions of childrens' Christmas trees!!");
+                System.out.println("You just ruined millions of children's Christmas trees!!");
 
             }
 
@@ -406,7 +402,7 @@ public class Game
 
             if(command.getSecondWord().equals("milk"))
             {
-                System.out.println("You just saved millions of childrens' Christmas trees!!");
+                System.out.println("You just saved millions of children's Christmas trees!!");
 
             }
         }
