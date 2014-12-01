@@ -238,7 +238,7 @@ public class Game
                 }
 
             }
-<<<<<<< HEAD
+
             if(bossHealth1.getHealth() <1)
             {
                 thisBoss1.death();
@@ -266,14 +266,9 @@ public class Game
 
         System.out.println("Thank you for playing. Good bye.");
     }
-=======
-
-        }
 
 
-            System.out.println("Thank you for playing.  Good bye.");
-        }
->>>>>>> FETCH_HEAD
+        
 
     public void playWithFileInput1() 
     {            
@@ -369,13 +364,13 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
-<<<<<<< HEAD
+
         
         else if(commandWord.equals("cut")){
 
             if(command.getSecondWord().equals("trees"))
             {
-               System.out.println("You just ruined millions of Christmas trees for children!!");
+               System.out.println("You just ruined millions of childrens' Christmas trees!!");
                
             }
             
@@ -385,7 +380,7 @@ public class Game
 
             if(command.getSecondWord().equals("milk"))
             {
-               System.out.println("You just saved millions of Christmas trees for children!!");
+               System.out.println("You just saved millions of childrens' Christmas trees!!");
                
             }
         }
@@ -394,19 +389,19 @@ public class Game
 
             if(command.getSecondWord().equals("still"))
             {
-                System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
-                quit(command);
+                System.out.println("You're starting to feel light headed until you're getting higher and higher...... Oh wait..... You're in Heaven");
+                playerDeath();
+                wantToQuit = true;
+                return wantToQuit;
                
             }
-        }
-=======
-        else if(commandWord.equals("stay")){
->>>>>>> FETCH_HEAD
+       
 
-            if(command.getSecondWord().equals("still"))
+            if(command.getSecondWord().equals("put"))
             {
                 playerDeath();
-                quit(command);
+                wantToQuit = true;
+                return wantToQuit;
             }
         }
         
