@@ -55,7 +55,6 @@ public class Game
         parserWithFileInput = new ParserWithFileInput();
 
 
-
         playerHealth = new Health();
         bossHealth1 = new Health();
         bossHealth2 = new Health();
@@ -65,7 +64,6 @@ public class Game
         thisBoss2 = new Boss2();
         thisBoss3 = new Boss3();
         thisBoss4 = new Boss4();
-        
 
 
     }
@@ -203,7 +201,7 @@ public class Game
             Command command = parser.getCommand();
             finished = processCommand(command);
         }
-        
+
         System.out.println("Thank you for playing.  Good bye.");
     }
 
@@ -300,97 +298,144 @@ public class Game
 
         else if(commandWord.equals("kick")){
 
-           if(command.getSecondWord().equals("ruderus"))
-           {
-               thisBoss1.whenKicked();
-               bossHealth1.reduceHealth();
-               bossHealth1.reduceHealth();
-               bossHealth1.printHealth();
-           
+            if(command.getSecondWord().equals("ruderus"))
+            {
+                System.out.println();
+                thisBoss1.whenKicked();
+                System.out.println();
+                bossHealth1.reduceHealth();
+                bossHealth1.reduceHealth();
+                System.out.println("You reduced Ruderus' health by 2");
+                bossHealth1.printHealth();
+                System.out.println();
+                playerHealth.reduceHealth();
+                System.out.println("Ruderus reduced your health by 1!");
+                playerHealth.printPlayerHealth();
+            }
+            if(command.getSecondWord().equals("stickyclause"))
+            {
+                System.out.println();
+                thisBoss2.whenKicked();
+                System.out.println();
+                bossHealth2.reduceHealth();
+                bossHealth2.reduceHealth();
+                bossHealth2.reduceHealth();
+                System.out.println("You reduced Sticky Clause's health by 3");
+                bossHealth2.printHealth();
+                System.out.println();
+                playerHealth.reduceHealth();
+                System.out.println("Sticky Clause reduced your health by 1!");
+                playerHealth.printPlayerHealth();
+                
+            }
+            if(command.getSecondWord().equals("riddler"))
+            {
+                System.out.println();
+                thisBoss3.whenKicked();
+                System.out.println();
+                bossHealth3.reduceHealth();
+                bossHealth3.reduceHealth();
+                bossHealth3.reduceHealth();
+                bossHealth3.reduceHealth();
+                System.out.println("You reduced the Riddler's health by 4");
+                bossHealth3.printHealth();
+                System.out.println();
+                playerHealth.reduceHealth();
+                System.out.println("The Riddler reduced your health by 1!");
+                playerHealth.printPlayerHealth();
+
+            }
+
+            if(command.getSecondWord().equals("santa"))
+            {
+                System.out.println();
+                thisBoss4.whenKicked();
+                System.out.println();
+                bossHealth4.reduceHealth();
+                bossHealth4.reduceHealth();
+                System.out.println("You reduced Santa's health by 1");
+                bossHealth4.printHealth();
+                System.out.println();
+                playerHealth.reduceHealth();
+                playerHealth.reduceHealth();
+                System.out.println("Santa reduced your health by 2!");
+                playerHealth.printPlayerHealth();
+
+            }
         }
-        if(command.getSecondWord().equals("stickyclause"))
-           {
-               thisBoss2.whenKicked();
-               bossHealth2.reduceHealth();
-               bossHealth2.reduceHealth();
-               bossHealth2.reduceHealth();
-               bossHealth2.reduceHealth();
-               
-               bossHealth2.printHealth();
-           
-        }
-         if(command.getSecondWord().equals("riddler"))
-           {
-               thisBoss3.whenKicked();
-               bossHealth3.reduceHealth();
-               bossHealth3.reduceHealth();
-               bossHealth3.reduceHealth();
-               bossHealth3.reduceHealth();
-               
-               bossHealth3.printHealth();
-           
-        }
-        
-         if(command.getSecondWord().equals("santa"))
-           {
-               thisBoss4.whenKicked();
-               bossHealth4.reduceHealth();
-               bossHealth4.reduceHealth();
-               bossHealth4.reduceHealth();
-               bossHealth4.reduceHealth();
-               
-               bossHealth4.printHealth();
-           
-        }
-        }
-        
+
         else if(commandWord.equals("slash")){
             if(command.getSecondWord().equals("ruderus"))
             {
+                System.out.println();
                 thisBoss1.whenSlashed();
+                System.out.println();
                 bossHealth1.reduceHealth();
                 bossHealth1.reduceHealth();
                 bossHealth1.reduceHealth();
                 bossHealth1.reduceHealth();
+                System.out.println("You reduced Ruderus' health by 4");
                 bossHealth1.printHealth();
+                System.out.println();
+                playerHealth.reduceHealth();
+                System.out.println("Ruderus reduced your health by 1!");
+                playerHealth.printPlayerHealth();
             }
-             if(command.getSecondWord().equals("stickyclause"))
-           {
-               thisBoss2.whenSlashed();
-               bossHealth2.reduceHealth();
-               bossHealth2.reduceHealth();
-               bossHealth2.reduceHealth();
-               bossHealth2.reduceHealth();
-               
-               bossHealth2.printHealth();
-           
-        }
-         if(command.getSecondWord().equals("riddler"))
-           {
-               thisBoss3.whenSlashed();
-               bossHealth3.reduceHealth();
-               bossHealth3.reduceHealth();
-               bossHealth3.reduceHealth();
-               bossHealth3.reduceHealth();
-               
-               bossHealth3.printHealth();
-           
-        }
-         if(command.getSecondWord().equals("santa"))
-           {
-               thisBoss4.whenSlashed();
-               bossHealth4.reduceHealth();
-               bossHealth4.reduceHealth();
-               bossHealth4.reduceHealth();
-               bossHealth4.reduceHealth();
-               
-               bossHealth4.printHealth();
-           
-        }
-            
+            if(command.getSecondWord().equals("stickyclause"))
+            {
+                System.out.println();
+                thisBoss2.whenSlashed();
+                System.out.println();
+                bossHealth2.reduceHealth();
+                bossHealth2.reduceHealth();
+                bossHealth2.reduceHealth();
+                bossHealth2.reduceHealth();
+                System.out.println("You reduced Sticky Clause's health by 4");
+                bossHealth2.printHealth();
+                System.out.println();
+                playerHealth.reduceHealth();
+                System.out.println("Sticky Clause reduced your health by 1!");
+                playerHealth.printPlayerHealth();
+
+            }
+            if(command.getSecondWord().equals("riddler"))
+            {
+                System.out.println();
+                thisBoss3.whenSlashed();
+                System.out.println();
+                bossHealth3.reduceHealth();
+                bossHealth3.reduceHealth();
+                bossHealth3.reduceHealth();
+                bossHealth3.reduceHealth();
+                System.out.println("You reduced the Riddler's health by 4");
+                bossHealth3.printHealth();
+                System.out.println();
+                playerHealth.reduceHealth();
+                System.out.println("The Riddler reduced your health by 1!");
+                playerHealth.printPlayerHealth();
+
+            }
+            if(command.getSecondWord().equals("santa"))
+            {
+                System.out.println();
+                thisBoss4.whenSlashed();
+                System.out.println();
+                bossHealth4.reduceHealth();
+                bossHealth4.reduceHealth();
+                bossHealth4.reduceHealth();
+                bossHealth4.reduceHealth();
+                bossHealth4.reduceHealth();
+                System.out.println("You reduced Santa's health by 5");
+                bossHealth4.printHealth();
+                System.out.println();
+                playerHealth.reduceHealth();
+                playerHealth.reduceHealth();
+                System.out.println("Santa reduced your health by 2!");
+                playerHealth.printPlayerHealth();
+
+            }
 
         }
-
         
         else if(commandWord.equals("grab")){
             if(command.getSecondWord().equals("bells")){
