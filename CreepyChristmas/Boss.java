@@ -87,7 +87,7 @@ public class Boss
 
         if(playerHealth.getHealth() < 1)
         {
-            //Game.playerDied = true; 
+            Game.playerDeath();
         }
 
     }
@@ -113,8 +113,8 @@ public class Boss
 
 
 
-//Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms
-// boss room subclass of room. 
+    //Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms
+    // boss room subclass of room. 
 
         
   
