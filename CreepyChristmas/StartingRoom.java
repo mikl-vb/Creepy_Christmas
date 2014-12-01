@@ -24,11 +24,16 @@ public class StartingRoom extends Room
         if(command.getSecondWord().equals("coal")){
             System.out.println("");
             Room dungeon = new Room("You fall into in a dark and dusty dungeon. " +
-                    "\n There is a hidden elevator with an open door. " + 
+                    "\n There is a hidden elevator with an open door and a dusty " +
+                    "\nparcel.  To read, type grab parcel" +
                     "\n Walk inside if you dare.");
 
             Game.currentRoom = dungeon;
-
+            
+            if(command.getSecondWord().equals("parcel")){
+                Game.parcel = new Object("***parcel with important information***");
+            }
+            
             dungeon.setExit("forward",Game.elevator);
             changeDescription("***Change description...?***");
         }
