@@ -175,7 +175,7 @@ public class Game
             "There, the Three-Headed Reindeer speaks..... \n" +
             "'Hello, I am Ruderus, the gatekeeper. You are my next MEAL! HAHAHA!'");
 
-<<<<<<< HEAD
+
         floor8 = new Room("\n" + "Room 8:\n Riddle Room 2 \n" +
             "Riddler: 'Hello Small One, \n" + 
             "It seems as if a certain little elf has gotten himself into a lot of trouble recently.\n" +
@@ -204,11 +204,8 @@ public class Game
             "\n" +
             "The Riddler is now flying talon first towards you!\n" +
             "Defend yourself hero!");
-=======
-        floor8 = new Room("\n" + "Floor 8:\n Riddle Room 2 \n" +
-            "Riddler: 'Hello Small One, it seems as if a certain little elf has \n" +
-            "          gotten himself into a lot of trouble recently'");
->>>>>>> origin/master
+
+
 
         floor9 = new Room("\n" + "Floor 9:\n Ms. Sticky Clause Room \n" +
             "You smell something that reminds you of a warm Christmas morning. \n" +
@@ -258,9 +255,6 @@ public class Game
 
     }
 
-<<<<<<< HEAD
-  
-=======
     /**
      *  Main play routine.  Loops until end of play.
      */
@@ -317,18 +311,6 @@ public class Game
         System.out.println("Thank you for playing. Good bye.");
     }
 
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-
- 
-
-<<<<<<< HEAD
-        
-=======
->>>>>>> FETCH_HEAD
->>>>>>> origin/master
-=======
->>>>>>> 3f0bee10f6244b3bc866553ca88b23943c263fb1
 
     public void playWithFileInput1() 
     {            
@@ -472,7 +454,7 @@ public class Game
             }
         }
         else if(commandWord.equals("kill")){
-            if(command.getSecondWord().equals("elfs")){
+            if(command.getSecondWord().equals("elves")){
                  System.out.println("You killed the elfs");
                  System.out.println("Millions of children will be without a present this year...");
 
