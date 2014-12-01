@@ -103,15 +103,28 @@ public class Health
 
     public void printHealth()
     {
-        System.out.println("Boss Health: " + getHealth());
+        if(getHealth() >= 0)
+        {System.out.println("Boss Health: " + getHealth());
+        }
+        else
+        {
+            System.out.println("Boss Health: 0 ");
+        }
+        
 
     }
     
     
     public void printPlayerHealth()
     {
-        System.out.println("Player Health: " + getHealth());
-
+        if(getHealth() >= 0)
+        {System.out.println("Player Health: " + getHealth());
+        }
+        
+        else
+        {
+            System.out.println("Boss Health: 0 ");
+        }
     }
     
 

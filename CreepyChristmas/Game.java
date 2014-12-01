@@ -130,6 +130,8 @@ public class Game
             "Christmas trees....... ON FIRE! \n" +
             "\n" +
             "Commands: cut trees, throw milk, run away, stay still");
+            
+           
 
         floor6 = new Room("\n" + "Room 6:\n Raging Elf (Part 2) Room \n" +
             "   You look forward and see a grand hallway with high crystal \n" +
@@ -221,10 +223,32 @@ public class Game
                 playerDeath();
                 quit(command);
             }
+            if(bossHealth1.getHealth() <1)
+            {
+                thisBoss1.death();
+                break;
+            }
+            if(bossHealth2.getHealth() <1)
+            {
+                thisBoss2.death();
+                break;
+            }
+            if(bossHealth3.getHealth() <1)
+            {
+                thisBoss3.death();
+                break;
+            }
+            if(bossHealth4.getHealth() <1)
+            {
+                thisBoss4.death();
+                System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
+                "/n You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
+                quit(command);
+            }
             
         }
 
-        System.out.println("Thank you for playing.  Good bye.");
+        System.out.println("Thank you for playing. Good bye.");
     }
 
     public void playWithFileInput1() 
@@ -316,6 +340,35 @@ public class Game
         }
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
+        }
+        
+        else if(commandWord.equals("cut")){
+
+            if(command.getSecondWord().equals("trees"))
+            {
+               System.out.println("You just ruined millions of Christmas trees for children!!");
+               
+            }
+            
+        }
+            
+            else if(commandWord.equals("throw")){
+
+            if(command.getSecondWord().equals("milk"))
+            {
+               System.out.println("You just saved millions of Christmas trees for children!!");
+               
+            }
+        }
+            
+            else if(commandWord.equals("stay")){
+
+            if(command.getSecondWord().equals("still"))
+            {
+                System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
+                quit(command);
+               
+            }
         }
 
         else if(commandWord.equals("kick")){
@@ -481,6 +534,7 @@ public class Game
 
     }
 
+
     // implementations of user commands:
 
     /**
@@ -551,4 +605,6 @@ public class Game
     
         return playerDied; 
     }
+    
+   
 }
