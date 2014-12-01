@@ -139,7 +139,7 @@ public class Game
             "different directions. \n" +
             "There, you see Santa. Possessed, with dark force powers");
 
-        elevator = new Room("The elevator... \n You take the elevator to the 5th floor.");
+        elevator = new Room("The elevator... \n You take the elevator to the 2nd floor.");
         // initialise room exits
         floor2.setExit("upstairs", floor3);
         floor3.setExit("downstairs", floor2);
@@ -162,7 +162,7 @@ public class Game
 
         floor9.setExit("downstairs", floor8);
 
-        elevator.setExit("forward", floor5);
+        elevator.setExit("forward", floor2);
 
         currentRoom = floor1;  // start game on first floor
 
@@ -184,10 +184,7 @@ public class Game
             Command command = parser.getCommand();
             finished = processCommand(command);
         }
-        //if(playerHealth = 0){
-        //    wantToQuit = true;
-        //    return wantToQuit;
-        //}
+        
         System.out.println("Thank you for playing.  Good bye.");
     }
 
