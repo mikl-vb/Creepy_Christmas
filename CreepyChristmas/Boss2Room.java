@@ -29,7 +29,7 @@ public class Boss2Room extends Room
 
             Game.currentRoom = boss2Room;
 
-            boss2Room.setExit("upstairs",Game.floor8);
+            boss2Room.setExit("upstairs",Game.floor9);
             changeDescription("***Change description...?***");
         }
         

@@ -22,13 +22,13 @@ public class Boss3Room extends Room
 
     public void grab(Command command)
     {
-        if(command.getSecondWord().equals("ruderus")){
+        if(command.getSecondWord().equals("stickyClause")){
             System.out.println("");
             Room boss3Room = new Room("You are in boss 1s room.");
 
             Game.currentRoom = boss3Room;
 
-            boss3Room.setExit("upstairs",Game.floor8);
+            boss3Room.setExit("downstairs",Game.floor8);
             changeDescription("***Change description...?***");
         }
         

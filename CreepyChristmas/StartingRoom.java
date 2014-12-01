@@ -39,7 +39,8 @@ public class StartingRoom extends Room
 
                 Game.currentRoom = Game.floor2;
 
-            }else{
+            }
+            else{
                 if(command.getSecondWord().equals("bells")){
                     System.out.println("You grabbed the sleigh bells.");
 
@@ -55,5 +56,6 @@ public class StartingRoom extends Room
             }
         }
     }
-
 }
+
+
