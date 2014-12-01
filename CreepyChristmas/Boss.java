@@ -26,10 +26,16 @@ public class Boss
     public Boss()
     {
         bossHealth = new Health();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> FETCH_HEAD
         
 
         
+>>>>>>> origin/master
 
 
 
@@ -40,22 +46,41 @@ public class Boss
 
     public void hitBoss(Command command)
     {
+<<<<<<< HEAD
+        bossHealth.reduceHealth();
+        
+=======
           bossHealth.reduceHealth(); 
           bossHealth.printHealth();
+>>>>>>> origin/master
     }
     
 
      public void firstBossInfo(){
+<<<<<<< HEAD
+  
+=======
       
         
+>>>>>>> origin/master
         
 
     }
     
+<<<<<<< HEAD
+    public void bossDeath()
+    {
+        bossHealth.death();
+        
+    
+    }
+   
+=======
     public void death(){
         System.out.println("Dead Boss...");
     }
 
+>>>>>>> origin/master
    }
     //Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms
     // boss room subclass of room. 

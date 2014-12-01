@@ -74,11 +74,30 @@ dependency8.type=UsesDependency
 dependency9.from=ParserWithFileInput
 dependency9.to=ReadFile
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 package.editor.height=734
 package.editor.width=1071
 package.editor.x=0
 package.editor.y=23
 package.numDependencies=25
+=======
+objectbench.height=76
+<<<<<<< HEAD
+objectbench.width=1346
+package.editor.height=571
+package.editor.width=1248
+package.editor.x=-8
+package.editor.y=-8
+package.numDependencies=24
+=======
+objectbench.width=1342
+package.editor.height=621
+package.editor.width=1234
+package.editor.x=310
+package.editor.y=64
+package.numDependencies=26
+>>>>>>> origin/master
+>>>>>>> FETCH_HEAD
 package.numTargets=16
 package.showExtends=true
 package.showUses=true
@@ -87,10 +106,24 @@ readme.editor.height=666
 readme.editor.width=839
 readme.editor.x=0
 readme.editor.y=22
+<<<<<<< HEAD
 target1.editor.height=700
 target1.editor.width=900
 target1.editor.x=89
 target1.editor.y=87
+=======
+<<<<<<< HEAD
+target1.editor.height=728
+target1.editor.width=683
+target1.editor.x=0
+target1.editor.y=0
+=======
+target1.editor.height=873
+target1.editor.width=755
+target1.editor.x=685
+target1.editor.y=23
+>>>>>>> origin/master
+>>>>>>> FETCH_HEAD
 target1.height=50
 target1.name=Command
 target1.naviview.expanded=true
@@ -111,12 +144,26 @@ target10.type=ClassTarget
 target10.width=80
 target10.x=780
 target10.y=380
+<<<<<<< HEAD
 target11.editor.height=873
 target11.editor.width=720
 target11.editor.x=720
 target11.editor.y=23
 target11.height=50
 target11.name=Boss1
+=======
+target11.editor.height=780
+target11.editor.width=938
+<<<<<<< HEAD
+target11.editor.x=2
+target11.editor.y=116
+=======
+target11.editor.x=108
+target11.editor.y=53
+>>>>>>> origin/master
+target11.height=60
+target11.name=Game
+>>>>>>> FETCH_HEAD
 target11.naviview.expanded=false
 target11.showInterface=false
 target11.type=ClassTarget
@@ -180,18 +227,33 @@ target16.name=ReadFile
 target16.naviview.expanded=false
 target16.showInterface=false
 target16.type=ClassTarget
+<<<<<<< HEAD
 target16.width=90
 target16.x=940
 target16.y=170
+=======
+target16.typeParameters=
+target16.width=100
+target16.x=310
+target16.y=150
+<<<<<<< HEAD
+target2.editor.height=728
+target2.editor.width=683
+target2.editor.x=683
+target2.editor.y=0
+=======
+>>>>>>> FETCH_HEAD
 target2.editor.height=873
 target2.editor.width=874
 target2.editor.x=-6
 target2.editor.y=23
+>>>>>>> origin/master
 target2.height=50
 target2.name=StartingRoom
 target2.naviview.expanded=false
 target2.showInterface=false
 target2.type=ClassTarget
+<<<<<<< HEAD
 target2.width=100
 target2.x=310
 target2.y=150
@@ -199,6 +261,23 @@ target3.editor.height=700
 target3.editor.width=900
 target3.editor.x=89
 target3.editor.y=87
+=======
+target2.typeParameters=
+target2.width=110
+target2.x=430
+target2.y=510
+<<<<<<< HEAD
+target3.editor.height=728
+target3.editor.width=683
+target3.editor.x=683
+target3.editor.y=0
+=======
+target3.editor.height=873
+target3.editor.width=720
+target3.editor.x=720
+target3.editor.y=23
+>>>>>>> origin/master
+>>>>>>> FETCH_HEAD
 target3.height=50
 target3.name=Parser
 target3.showInterface=false
@@ -215,6 +294,7 @@ target4.name=ParserWithFileInput
 target4.naviview.expanded=false
 target4.showInterface=false
 target4.type=ClassTarget
+<<<<<<< HEAD
 target4.width=110
 target4.x=850
 target4.y=70
@@ -225,26 +305,69 @@ target5.editor.y=23
 target5.height=60
 target5.name=Game
 target5.naviview.expanded=false
+=======
+target4.typeParameters=
+target4.width=90
+target4.x=940
+target4.y=170
+target5.editor.height=700
+target5.editor.width=900
+target5.editor.x=89
+target5.editor.y=87
+target5.height=50
+target5.name=Parser
+<<<<<<< HEAD
+target5.naviview.expanded=true
+=======
+>>>>>>> origin/master
+>>>>>>> FETCH_HEAD
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=100
 target5.x=0
 target5.y=280
 target6.editor.height=873
+<<<<<<< HEAD
 target6.editor.width=745
 target6.editor.x=696
 target6.editor.y=23
+=======
+target6.editor.width=720
+<<<<<<< HEAD
+target6.editor.x=720
+target6.editor.y=23
+=======
+target6.editor.x=213
+target6.editor.y=34
+>>>>>>> origin/master
+>>>>>>> FETCH_HEAD
 target6.height=50
 target6.name=Boss1Room
 target6.naviview.expanded=false
 target6.showInterface=false
 target6.type=ClassTarget
+<<<<<<< HEAD
 target6.width=100
 target6.x=260
 target6.y=460
 target7.editor.height=700
 target7.editor.width=900
 target7.editor.x=500
+=======
+target6.typeParameters=
+target6.width=80
+target6.x=690
+target6.y=380
+<<<<<<< HEAD
+target7.editor.height=780
+target7.editor.width=720
+target7.editor.x=720
+=======
+target7.editor.height=873
+target7.editor.width=720
+target7.editor.x=0
+>>>>>>> origin/master
+>>>>>>> FETCH_HEAD
 target7.editor.y=23
 target7.height=50
 target7.name=Health
@@ -252,12 +375,24 @@ target7.naviview.expanded=false
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=80
+<<<<<<< HEAD
 target7.x=510
 target7.y=200
+=======
+target7.x=780
+target7.y=380
+<<<<<<< HEAD
+target8.editor.height=744
+target8.editor.width=1378
+target8.editor.x=-8
+target8.editor.y=0
+=======
+>>>>>>> FETCH_HEAD
 target8.editor.height=873
 target8.editor.width=720
 target8.editor.x=720
 target8.editor.y=23
+>>>>>>> origin/master
 target8.height=50
 target8.name=Boss
 target8.naviview.expanded=false
@@ -266,10 +401,17 @@ target8.type=ClassTarget
 target8.width=90
 target8.x=640
 target8.y=260
+<<<<<<< HEAD
 target9.editor.height=873
 target9.editor.width=720
 target9.editor.x=213
 target9.editor.y=34
+=======
+target9.editor.height=780
+target9.editor.width=695
+target9.editor.x=0
+target9.editor.y=23
+>>>>>>> FETCH_HEAD
 target9.height=50
 target9.name=Boss3
 target9.naviview.expanded=false
