@@ -216,9 +216,17 @@ public class Game
         while (!finished) { 
             Command command = parser.getCommand();
             finished = processCommand(command);
+<<<<<<< HEAD
             if(playerHealth.getHealth() < 1){
                   playerDeath();
+=======
+            if(playerHealth.getHealth() <1)
+            {
+                playerDeath();
+                quit(command);
+>>>>>>> FETCH_HEAD
             }
+            
         }
 
         System.out.println("Thank you for playing.  Good bye.");
@@ -372,7 +380,7 @@ public class Game
                 System.out.println();
                 bossHealth4.reduceHealth();
                 bossHealth4.reduceHealth();
-                System.out.println("You reduced Santa's health by 1");
+                System.out.println("You reduced Santa's health by 2");
                 bossHealth4.printHealth();
                 System.out.println();
                 playerHealth.reduceHealth();
@@ -545,6 +553,7 @@ public class Game
     {
         System.out.println("Oh dear... You are dead!");
         playerDied = true;
+    
         return playerDied; 
     }
 }
