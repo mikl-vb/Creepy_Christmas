@@ -281,10 +281,10 @@ public class Game
         }
 
         
-        else if(commandWord.equals("hit")){
+        else if(commandWord.equals("kick")){
            thisBoss1 = new Boss1();
-           thisBoss1.hitBoss(command);
-           System.out.println("test");
+           thisBoss1.kickBoss(command);
+           ;
         }
          
            

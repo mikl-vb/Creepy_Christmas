@@ -27,14 +27,14 @@ public class Boss1 extends Boss
         System.out.println("I am boss 1 add info here....");
     }
     
-    public void hitBoss(Command command)
+    public void kickBoss(Command command)
     {
        System.out.println("You hit boss 1 and blah blah blah");
-       super.hitBoss(command);
+       super.kickBoss(command);
     }
     
     public void death(){
-        System.out.println("dead boss 1");
+        System.out.println("Dead Ruderus");
     }
     
 }

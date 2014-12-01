@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Boss here.
  * 
@@ -11,11 +10,15 @@ public class Boss
     // instance variables - replace the example below with your own
     public Health bossHealth;
     public Health playerHealth;
+<<<<<<< HEAD
     private Boolean dead;
 
     
 
+=======
+>>>>>>> 04654f18274a4183dc7baf47675c53e09a0e0b1e
 
+    public Health Dead;
     
 
     /**
@@ -24,6 +27,7 @@ public class Boss
     public Boss()
     {
         bossHealth = new Health();
+<<<<<<< HEAD
         dead = false; 
 
         
@@ -31,13 +35,16 @@ public class Boss
         
 
 
+=======
+>>>>>>> 04654f18274a4183dc7baf47675c53e09a0e0b1e
         
 
     }
 
 
-    public void hitBoss(Command command)
+    public void kickBoss(Command command)
     {
+<<<<<<< HEAD
           if(dead == true)
           {
             System.out.println("Your foe has already fallen. Time to move on.");
@@ -46,6 +53,12 @@ public class Boss
             
             }
           
+=======
+
+        bossHealth.reduceHealth();
+        
+
+>>>>>>> 04654f18274a4183dc7baf47675c53e09a0e0b1e
           bossHealth.reduceHealth(); 
           if(bossHealth.getHealth() < 1)
           {
@@ -54,8 +67,12 @@ public class Boss
             
             }
           bossHealth.printHealth();
+<<<<<<< HEAD
           
           
+=======
+
+>>>>>>> 04654f18274a4183dc7baf47675c53e09a0e0b1e
     }
     
     public void hitPlayer()
@@ -69,7 +86,10 @@ public class Boss
     
      public void firstBossInfo(){
 
+<<<<<<< HEAD
         
+=======
+>>>>>>> 04654f18274a4183dc7baf47675c53e09a0e0b1e
 
     }
 
@@ -82,8 +102,16 @@ public class Boss
     
     }
    
+<<<<<<< HEAD
 
     
+=======
+
+    public void death(){
+        System.out.println("Dead Boss...");
+    }
+
+>>>>>>> 04654f18274a4183dc7baf47675c53e09a0e0b1e
 
    }
     //Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms

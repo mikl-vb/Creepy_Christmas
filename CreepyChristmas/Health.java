@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class PlayerHealth here.
  * 
@@ -81,8 +80,11 @@ public class Health
     
    
     
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> 04654f18274a4183dc7baf47675c53e09a0e0b1e
     public void printHealth()
     {
         System.out.println("Health:" + getHealth());
