@@ -7,6 +7,7 @@
  */
 public class Boss2 extends Boss
 {
+    private Boss StickyClause;
     
     
 
@@ -16,6 +17,7 @@ public class Boss2 extends Boss
     public Boss2()
     {
        super(); 
+       StickyClause = new Boss();
     }
     
     public void getBoss2Info()
@@ -25,10 +27,11 @@ public class Boss2 extends Boss
     
     public void hitBoss(Command command)
     {
-       super.hitBoss(command);
-       
        System.out.println("You hit boss 2 and blah blah blah");
-       playerHealth.reduceHealth();
+       super.hitBoss(command); 
+       
+       
+       
        
     }
 

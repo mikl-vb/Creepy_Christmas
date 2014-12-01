@@ -6,4 +6,6 @@ comment1.params=
 comment1.target=void\ getBoss1Info()
 comment2.params=command
 comment2.target=void\ hitBoss(Command)
-numComments=3
+comment3.params=
+comment3.target=void\ death()
+numComments=4

@@ -74,7 +74,21 @@ public class Health
        
     }
     
+<<<<<<< HEAD
     public boolean death(){
         return true; 
+=======
+    public void death(){
+        System.out.println("Dead...");
+    }
+    
+    public void printHealth(){
+        
+    }
+    
+    public void printHealth()
+    {
+        System.out.println("Health:" + getHealth());
+>>>>>>> origin/master
     }
 }

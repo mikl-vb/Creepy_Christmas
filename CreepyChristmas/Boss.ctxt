@@ -7,5 +7,9 @@ comment1.target=void\ hitBoss(Command)
 comment2.params=
 comment2.target=void\ firstBossInfo()
 comment3.params=
+<<<<<<< HEAD
 comment3.target=void\ bossDeath()
+=======
+comment3.target=void\ death()
+>>>>>>> origin/master
 numComments=4

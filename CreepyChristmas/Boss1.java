@@ -9,7 +9,7 @@
  */
 public class Boss1 extends Boss
 {
-    
+    private Boss Ruderus;
     
     
     /**
@@ -18,6 +18,8 @@ public class Boss1 extends Boss
     public Boss1()
     {
        super();
+       Ruderus = new Boss(); 
+       
     }
     
     public void getBoss1Info()
@@ -27,11 +29,12 @@ public class Boss1 extends Boss
     
     public void hitBoss(Command command)
     {
-       super.hitBoss(command);
-       
        System.out.println("You hit boss 1 and blah blah blah");
-       playerHealth.reduceHealth();
-       
+       super.hitBoss(command);
+    }
+    
+    public void death(){
+        System.out.println("dead boss 1");
     }
     
 }
