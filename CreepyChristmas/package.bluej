@@ -17,39 +17,40 @@ dependency13.type=UsesDependency
 dependency14.from=Game
 dependency14.to=Health
 dependency14.type=UsesDependency
-dependency15.from=Boss
-dependency15.to=Health
+dependency15.from=Boss1Room
+dependency15.to=Command
 dependency15.type=UsesDependency
-dependency16.from=Boss
-dependency16.to=Command
+dependency16.from=Boss1Room
+dependency16.to=Game
 dependency16.type=UsesDependency
-dependency17.from=Boss1Room
+dependency17.from=Boss3
 dependency17.to=Command
 dependency17.type=UsesDependency
-dependency18.from=Boss1Room
-dependency18.to=Game
+dependency18.from=Boss4
+dependency18.to=Command
 dependency18.type=UsesDependency
-dependency19.from=Boss3
+dependency19.from=Boss1
 dependency19.to=Command
 dependency19.type=UsesDependency
 dependency2.from=Parser
 dependency2.to=Command
 dependency2.type=UsesDependency
-dependency20.from=Boss4
+dependency20.from=Boss2
 dependency20.to=Command
 dependency20.type=UsesDependency
-dependency21.from=Boss1
+dependency21.from=Object
 dependency21.to=Command
 dependency21.type=UsesDependency
-dependency22.from=Boss2
-dependency22.to=Command
+dependency22.from=Boss1Room
+dependency22.to=Boss1
 dependency22.type=UsesDependency
-dependency23.from=Object
-dependency23.to=Command
+dependency23.from=Game
+dependency23.to=Boss1
 dependency23.type=UsesDependency
-dependency24.from=Boss1Room
-dependency24.to=Boss1
+dependency24.from=Boss1
+dependency24.to=Health
 dependency24.type=UsesDependency
+<<<<<<< Updated upstream
 dependency25.from=Game
 dependency25.to=Boss
 dependency25.type=UsesDependency
@@ -65,6 +66,8 @@ dependency28.type=UsesDependency
 dependency29.from=Boss3Room
 dependency29.to=Boss3
 dependency29.type=UsesDependency
+=======
+>>>>>>> Stashed changes
 dependency3.from=Game
 dependency3.to=Parser
 dependency3.type=UsesDependency
@@ -113,12 +116,23 @@ dependency8.type=UsesDependency
 dependency9.from=ParserWithFileInput
 dependency9.to=ReadFile
 dependency9.type=UsesDependency
+<<<<<<< Updated upstream
 package.editor.height=734
 package.editor.width=1201
 package.editor.x=0
 package.editor.y=23
 package.numDependencies=38
 package.numTargets=19
+=======
+objectbench.height=76
+objectbench.width=1342
+package.editor.height=621
+package.editor.width=1234
+package.editor.x=167
+package.editor.y=95
+package.numDependencies=24
+package.numTargets=16
+>>>>>>> Stashed changes
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
@@ -126,28 +140,49 @@ readme.editor.height=666
 readme.editor.width=839
 readme.editor.x=0
 readme.editor.y=22
+<<<<<<< Updated upstream
 target1.editor.height=854
 target1.editor.width=748
 target1.editor.x=694
 target1.editor.y=23
 target1.height=50
 target1.name=Command
+=======
+target1.editor.height=873
+target1.editor.width=720
+target1.editor.x=0
+target1.editor.y=23
+target1.height=50
+target1.name=Health
+>>>>>>> Stashed changes
 target1.naviview.expanded=false
 target1.showInterface=false
 target1.type=ClassTarget
+target1.typeParameters=
 target1.width=80
+<<<<<<< Updated upstream
 target1.x=1080
 target1.y=310
+=======
+target1.x=510
+target1.y=180
+>>>>>>> Stashed changes
 target10.editor.height=873
 target10.editor.width=720
 target10.editor.x=720
 target10.editor.y=23
 target10.height=50
+<<<<<<< Updated upstream
 target10.name=Boss
+=======
+target10.name=Boss2
+>>>>>>> Stashed changes
 target10.naviview.expanded=false
 target10.showInterface=false
 target10.type=ClassTarget
+target10.typeParameters=
 target10.width=80
+<<<<<<< Updated upstream
 target10.x=90
 target10.y=460
 target11.editor.height=873
@@ -156,10 +191,22 @@ target11.editor.x=360
 target11.editor.y=23
 target11.height=50
 target11.name=Boss4Room
+=======
+target10.x=650
+target10.y=400
+target11.editor.height=873
+target11.editor.width=720
+target11.editor.x=0
+target11.editor.y=23
+target11.height=60
+target11.name=Game
+>>>>>>> Stashed changes
 target11.naviview.expanded=false
 target11.showInterface=false
 target11.type=ClassTarget
+target11.typeParameters=
 target11.width=80
+<<<<<<< Updated upstream
 target11.x=350
 target11.y=330
 target12.editor.height=873
@@ -168,10 +215,22 @@ target12.editor.x=3
 target12.editor.y=23
 target12.height=50
 target12.name=Boss3
+=======
+target11.x=20
+target11.y=220
+target12.editor.height=873
+target12.editor.width=720
+target12.editor.x=213
+target12.editor.y=23
+target12.height=50
+target12.name=Boss1Room
+>>>>>>> Stashed changes
 target12.naviview.expanded=false
 target12.showInterface=false
 target12.type=ClassTarget
+target12.typeParameters=
 target12.width=80
+<<<<<<< Updated upstream
 target12.x=140
 target12.y=230
 target13.editor.height=700
@@ -180,9 +239,22 @@ target13.editor.x=40
 target13.editor.y=43
 target13.height=50
 target13.name=Boss4
+=======
+target12.x=260
+target12.y=360
+target13.editor.height=873
+target13.editor.width=755
+target13.editor.x=685
+target13.editor.y=23
+target13.height=50
+target13.name=Command
+target13.naviview.expanded=true
+>>>>>>> Stashed changes
 target13.showInterface=false
 target13.type=ClassTarget
+target13.typeParameters=
 target13.width=80
+<<<<<<< Updated upstream
 target13.x=140
 target13.y=10
 target14.editor.height=780
@@ -198,6 +270,24 @@ target14.width=90
 target14.x=860
 target14.y=360
 target15.editor.height=1212
+=======
+target13.x=510
+target13.y=30
+target14.editor.height=1212
+target14.editor.width=1080
+target14.editor.x=608
+target14.editor.y=23
+target14.height=50
+target14.name=Object
+target14.naviview.expanded=false
+target14.showInterface=false
+target14.type=ClassTarget
+target14.typeParameters=
+target14.width=110
+target14.x=430
+target14.y=510
+target15.editor.height=873
+>>>>>>> Stashed changes
 target15.editor.width=1080
 target15.editor.x=360
 target15.editor.y=23
@@ -206,6 +296,7 @@ target15.name=Room
 target15.naviview.expanded=false
 target15.showInterface=false
 target15.type=ClassTarget
+<<<<<<< Updated upstream
 target15.width=110
 target15.x=670
 target15.y=250
@@ -242,15 +333,35 @@ target19.type=ClassTarget
 target19.width=80
 target19.x=460
 target19.y=10
+=======
+target15.typeParameters=
+target15.width=80
+target15.x=380
+target15.y=280
+target16.editor.height=873
+target16.editor.width=874
+target16.editor.x=-6
+target16.editor.y=23
+target16.height=50
+target16.name=StartingRoom
+target16.naviview.expanded=false
+target16.showInterface=false
+target16.type=ClassTarget
+target16.typeParameters=
+target16.width=110
+target16.x=350
+target16.y=430
+>>>>>>> Stashed changes
 target2.editor.height=873
 target2.editor.width=720
 target2.editor.x=720
 target2.editor.y=23
 target2.height=50
-target2.name=StartingRoom
+target2.name=CommandWords
 target2.naviview.expanded=false
 target2.showInterface=false
 target2.type=ClassTarget
+<<<<<<< Updated upstream
 target2.width=100
 target2.x=280
 target2.y=120
@@ -267,14 +378,35 @@ target3.width=110
 target3.x=470
 target3.y=530
 target4.editor.height=780
+=======
+target2.typeParameters=
+target2.width=110
+target2.x=430
+target2.y=510
+target3.editor.height=873
+target3.editor.width=720
+target3.editor.x=720
+target3.editor.y=23
+target3.height=50
+target3.name=ParserWithFileInput
+target3.naviview.expanded=false
+target3.showInterface=false
+target3.type=ClassTarget
+target3.typeParameters=
+target3.width=90
+target3.x=810
+target3.y=170
+target4.editor.height=873
+>>>>>>> Stashed changes
 target4.editor.width=720
 target4.editor.x=720
 target4.editor.y=23
 target4.height=50
-target4.name=ParserWithFileInput
+target4.name=ReadFile
 target4.naviview.expanded=false
 target4.showInterface=false
 target4.type=ClassTarget
+<<<<<<< Updated upstream
 target4.width=90
 target4.x=940
 target4.y=170
@@ -308,10 +440,50 @@ target7.editor.x=352
 target7.editor.y=23
 target7.height=60
 target7.name=Game
+=======
+target4.typeParameters=
+target4.width=100
+target4.x=310
+target4.y=150
+target5.editor.height=700
+target5.editor.width=900
+target5.editor.x=89
+target5.editor.y=87
+target5.height=50
+target5.name=Parser
+target5.naviview.expanded=true
+target5.showInterface=false
+target5.type=ClassTarget
+target5.typeParameters=
+target5.width=100
+target5.x=1020
+target5.y=340
+target6.editor.height=780
+target6.editor.width=695
+target6.editor.x=0
+target6.editor.y=23
+target6.height=50
+target6.name=Boss3
+target6.naviview.expanded=false
+target6.showInterface=false
+target6.type=ClassTarget
+target6.typeParameters=
+target6.width=80
+target6.x=760
+target6.y=400
+target7.editor.height=873
+target7.editor.width=720
+target7.editor.x=0
+target7.editor.y=23
+target7.height=50
+target7.name=Boss4
+>>>>>>> Stashed changes
 target7.naviview.expanded=false
 target7.showInterface=false
 target7.type=ClassTarget
+target7.typeParameters=
 target7.width=80
+<<<<<<< Updated upstream
 target7.x=1050
 target7.y=450
 target8.editor.height=873
@@ -332,9 +504,38 @@ target9.editor.x=685
 target9.editor.y=23
 target9.height=50
 target9.name=Health
+=======
+target7.x=860
+target7.y=420
+target8.editor.height=700
+target8.editor.width=900
+target8.editor.x=647
+target8.editor.y=36
+target8.height=50
+target8.name=Boss1
+target8.naviview.expanded=false
+target8.showInterface=false
+target8.type=ClassTarget
+target8.typeParameters=
+target8.width=80
+target8.x=550
+target8.y=400
+target9.editor.height=700
+target9.editor.width=900
+target9.editor.x=207
+target9.editor.y=115
+target9.height=50
+target9.name=Boss
+>>>>>>> Stashed changes
 target9.naviview.expanded=false
 target9.showInterface=false
 target9.type=ClassTarget
+target9.typeParameters=
 target9.width=80
+<<<<<<< Updated upstream
 target9.x=230
 target9.y=490
+=======
+target9.x=710
+target9.y=250
+>>>>>>> Stashed changes

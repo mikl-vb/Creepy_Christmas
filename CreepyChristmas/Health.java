@@ -7,19 +7,27 @@
 public class Health
 {
     // instance variables - replace the example below with your own
-    private int health;
+    public int health;
     private String healthDescription;
+
  
 
     
+
+    private Boolean dead;
+
+
     /**
      * Constructor for objects of class Health
      */
     public Health(){
         health = 10;
         healthDescription = getHealthDescription(health);
+
      
+
         
+
     }
 
     public String getHealthDescription(int health){
@@ -57,32 +65,49 @@ public class Health
         }
         return healthDescription = "Health = 0";
     }
-    
+
     public int getHealth(){
         return health;
     }
-    
+
     public void setHealth(int health)
     {
         this.health = health;
     }
-    
 
     public void reduceHealth()
     {
+
        health = health -1;
-       if(health < 1)
-       {
-           return;
-           
-        }
+       
+     
     }
+
+        
+        
+        
+
+    
+    
+    public void updateHealth()
+    {
+        setHealth(health);
+    }
+    
+    
+    
+    
+    
+
+
 
     public void printHealth()
     {
         System.out.println("Health:" + getHealth());
 
     }
+
+
     }
 
 

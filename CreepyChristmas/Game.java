@@ -49,6 +49,13 @@ public class Game
         parserWithFileInput = new ParserWithFileInput();
 
 
+
+        playerHealth = new Health();
+        bossHealth = new Health();
+        thisBoss1 = new Boss1();
+        
+
+
     }
 
     /**
@@ -283,9 +290,32 @@ public class Game
         }
 
         else if(commandWord.equals("kick")){
+
             thisBoss1 = new Boss1();
             thisBoss1.kickBoss(command);
             ;
+
+           if(command.getSecondWord().equals("ruderus"))
+           {thisBoss1 = new Boss1();
+               bossHealth.reduceHealth();
+               bossHealth.reduceHealth();
+               bossHealth.printHealth();
+           
+        }
+        }
+        
+        else if(commandWord.equals("slash")){
+            if(command.getSecondWord().equals("ruderus"))
+            {
+                thisBoss1 = new Boss1();
+                bossHealth.reduceHealth();
+                bossHealth.reduceHealth();
+                bossHealth.reduceHealth();
+                bossHealth.reduceHealth();
+                bossHealth.printHealth();
+            }
+            
+
         }
 
         

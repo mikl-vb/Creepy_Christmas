@@ -12,6 +12,7 @@ public class Boss1 extends Boss
     private Boss Ruderus;
     
     
+    
     /**
      * Constructor for objects of class Boss1
      */
@@ -30,7 +31,10 @@ public class Boss1 extends Boss
     public void kickBoss(Command command)
     {
        System.out.println("You hit boss 1 and blah blah blah");
+
        super.kickBoss(command);
+
+
        
     }
     
