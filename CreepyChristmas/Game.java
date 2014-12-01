@@ -482,6 +482,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Ruderus reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth1.getHealth() < 1)
                 {
@@ -502,6 +503,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Sticky Clause reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth2.getHealth() < 1)
                 {
@@ -523,6 +525,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("The Riddler reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                  if(bossHealth3.getHealth() < 1)
                 {
@@ -545,6 +548,7 @@ public class Game
                 
                 System.out.println("Santa reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                  if(bossHealth4.getHealth() < 1)
                 {
@@ -570,6 +574,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Ruderus reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth1.getHealth() < 1)
                 {
@@ -591,6 +596,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("Sticky Clause reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth2.getHealth() < 1)
                 {
@@ -612,6 +618,7 @@ public class Game
                 playerHealth.reduceHealth();
                 System.out.println("The Riddler reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth3.getHealth() < 1)
                 {
@@ -636,6 +643,7 @@ public class Game
                 
                 System.out.println("Santa reduced your health by 1!");
                 playerHealth.printPlayerHealth();
+                System.out.println();
                 
                 if(bossHealth4.getHealth() < 1)
                 {
