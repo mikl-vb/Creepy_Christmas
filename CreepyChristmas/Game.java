@@ -216,9 +216,7 @@ public class Game
         while (!finished) { 
             Command command = parser.getCommand();
             finished = processCommand(command);
-            if(thisHealth < 1){
-                  playerDeath();
-            }
+            
         }
 
         System.out.println("Thank you for playing.  Good bye.");
@@ -265,6 +263,10 @@ public class Game
         boolean finished = false;
         while (! finished) {
             Command command = parserWithFileInput.getCommandForCommands3();
+            if(playerHealth.getHealth() == 0)
+            {
+                playerDeath();
+            }
             finished = processCommand(command);
         }
         System.out.println("Thank you for playing.  Good bye.");
