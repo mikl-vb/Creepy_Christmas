@@ -184,6 +184,10 @@ public class Game
             Command command = parser.getCommand();
             finished = processCommand(command);
         }
+        //if(playerHealth = 0){
+        //    wantToQuit = true;
+        //    return wantToQuit;
+        //}
         System.out.println("Thank you for playing.  Good bye.");
     }
 

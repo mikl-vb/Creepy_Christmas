@@ -55,7 +55,7 @@ public class Health
             healthDescription = "Health = 10";
             break;
         }
-        return healthDescription = "You Health level is: " + healthDescription;
+        return healthDescription = "Health = 0";
     }
     
     public int getHealth(){
