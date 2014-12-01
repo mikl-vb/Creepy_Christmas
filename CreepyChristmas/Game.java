@@ -308,9 +308,6 @@ public class Game
         System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
 
                 "/n" + "You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
-        
-
-
 
 
         System.out.println("Thank you for playing. Good bye.");
