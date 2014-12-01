@@ -6,7 +6,7 @@
  * @version (a version number or a date)
  */
 
-public abstract class Boss
+public class Boss
 {
     // instance variables - replace the example below with your own
     public Health bossHealth;
@@ -21,7 +21,7 @@ public abstract class Boss
     public Boss()
     {
         bossHealth = new Health();
-        Dead = false; 
+
         
 
     }
@@ -29,19 +29,24 @@ public abstract class Boss
 
     public void hitBoss(Command command)
     {
-           
+        bossHealth.reduceHealth();
+        
     }
     
 
      public void firstBossInfo(){
-      
-        bossHealth.reduceHealth();
+  
         
 
     }
     
+    public void bossDeath()
+    {
+        bossHealth.death();
+        
     
-
+    }
+   
    }
     //Boss super class that tracks health. 3 subclasses have attacks and responses. Modify room for the boss rooms
     // boss room subclass of room. 

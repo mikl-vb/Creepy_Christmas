@@ -74,7 +74,7 @@ public class Health
        
     }
     
-    public void death(){
-    
+    public boolean death(){
+        return true; 
     }
 }
