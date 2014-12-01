@@ -160,6 +160,7 @@ target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
 target1.width=80
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 target1.x=1080
 target1.y=310
@@ -167,6 +168,10 @@ target1.y=310
 target1.x=510
 target1.y=180
 >>>>>>> Stashed changes
+=======
+target1.x=1100
+target1.y=260
+>>>>>>> FETCH_HEAD
 target10.editor.height=873
 target10.editor.width=720
 target10.editor.x=720
@@ -182,9 +187,14 @@ target10.showInterface=false
 target10.type=ClassTarget
 target10.typeParameters=
 target10.width=80
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 target10.x=90
 target10.y=460
+=======
+target10.x=80
+target10.y=60
+>>>>>>> FETCH_HEAD
 target11.editor.height=873
 target11.editor.width=1080
 target11.editor.x=360
@@ -230,9 +240,14 @@ target12.showInterface=false
 target12.type=ClassTarget
 target12.typeParameters=
 target12.width=80
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 target12.x=140
 target12.y=230
+=======
+target12.x=230
+target12.y=630
+>>>>>>> FETCH_HEAD
 target13.editor.height=700
 target13.editor.width=900
 target13.editor.x=40
@@ -254,9 +269,14 @@ target13.showInterface=false
 target13.type=ClassTarget
 target13.typeParameters=
 target13.width=80
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 target13.x=140
 target13.y=10
+=======
+target13.x=50
+target13.y=540
+>>>>>>> FETCH_HEAD
 target14.editor.height=780
 target14.editor.width=748
 target14.editor.x=0
@@ -267,8 +287,8 @@ target14.naviview.expanded=false
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=90
-target14.x=860
-target14.y=360
+target14.x=0
+target14.y=180
 target15.editor.height=1212
 =======
 target13.x=510
@@ -305,8 +325,8 @@ target16.name=Boss2
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=80
-target16.x=230
-target16.y=10
+target16.x=120
+target16.y=660
 target17.height=50
 target17.name=CommandWords
 target17.showInterface=false
@@ -324,8 +344,8 @@ target18.naviview.expanded=false
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=110
-target18.x=510
-target18.y=570
+target18.x=680
+target18.y=610
 target19.height=50
 target19.name=ReadFile
 target19.showInterface=false
@@ -420,8 +440,8 @@ target5.naviview.expanded=false
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
-target5.x=1060
-target5.y=380
+target5.x=1080
+target5.y=400
 target6.editor.height=700
 target6.editor.width=900
 target6.editor.x=36
@@ -432,11 +452,11 @@ target6.naviview.expanded=false
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=100
-target6.x=540
-target6.y=370
+target6.x=660
+target6.y=340
 target7.editor.height=873
 target7.editor.width=1092
-target7.editor.x=352
+target7.editor.x=348
 target7.editor.y=23
 target7.height=60
 target7.name=Game
@@ -483,9 +503,14 @@ target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
 target7.width=80
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 target7.x=1050
 target7.y=450
+=======
+target7.x=980
+target7.y=400
+>>>>>>> FETCH_HEAD
 target8.editor.height=873
 target8.editor.width=720
 target8.editor.x=721
@@ -496,7 +521,7 @@ target8.naviview.expanded=false
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=80
-target8.x=1040
+target8.x=1050
 target8.y=520
 target9.editor.height=873
 target9.editor.width=755
