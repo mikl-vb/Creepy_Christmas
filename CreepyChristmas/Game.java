@@ -146,7 +146,7 @@ public class Game
             "\n" +
             "Commands: cut trees, throw milk, run away, stay still");
 
-        floor6 = new Room("\n" + "Floor 6:\n Raging Elfs (Part 2) Room \n" +
+        floor6 = new Room("\n" + "Floor 6:\n Raging Elves (Part 2) Room \n" +
             "   You look forward and see a grand hallway with high crystal \n" +
             "chandeliers, lined as if they were a path of stars. You take a step \n" +
             "forward until when at the end of the hall, you hear a rumbling coming \n" +
@@ -277,49 +277,35 @@ public class Game
             if(bossHealth1.getHealth() <1)
             {
                 thisBoss1.death();
-                if(bossHealth2.getHealth() <1)
-                {
-                    thisBoss2.death();
-                    if(bossHealth2.getHealth() <1)
-                    {
-                        thisBoss2.death();
-                        if(bossHealth3.getHealth() <1)
-                        {
-                            thisBoss3.death();
-                            if(bossHealth4.getHealth() <1)
-                            {
-                                thisBoss4.death();
-                                quit(command);
+                break;
+            }
 
-                                System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
-                                    "/n You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
+            if(bossHealth2.getHealth() <1)
+            {
+                thisBoss2.death();
+                break;
+            }
 
-                                System.out.println("Thank you for playing. Good bye.");
-                            }
-                        }
-                    }
-                }
+            if(bossHealth3.getHealth() <1)
+            {
+                thisBoss3.death();
+                break;
+            }
+
+            if(bossHealth4.getHealth() <1)
+            {
+                thisBoss4.death();
+               // quit(command);
             }
         }
 
+        System.out.println("Congratulations!! You have slieghed the evil Santa! Luckily for you, you have now inherited his benevolent powers!" + 
+            "/n You must now see to delivering all the Christmas Presents!!!! May the odds be ever in your favor");
+
+        System.out.println("Thank you for playing. Good bye.");
+
     }
-<<<<<<< HEAD
-=======
 
-
-
-
-
- 
-
-
-        
-
-
-
-
-
->>>>>>> FETCH_HEAD
     public void playWithFileInput1() 
     {            
         printWelcome();
@@ -448,19 +434,12 @@ public class Game
             if(command.getSecondWord().equals("put"))
             {
                 playerDeath();
-<<<<<<< HEAD
 
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
                 System.out.println("You caught rabies...");
-=======
-
-                
 
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
-
                 System.out.println("You caught rabies...");
-
->>>>>>> FETCH_HEAD
                 wantToQuit = true;
                 return wantToQuit;
             }

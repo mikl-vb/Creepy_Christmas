@@ -14,18 +14,9 @@ public class CommandWords
     // a constant array that holds all valid command words
     private static final String[] validCommands = {
 
-<<<<<<< HEAD
+
         "go", "quit", "help", "grab", "forward ", "kick", "slash", "run", "stay", "still", "kill", "cut", "throw"
-=======
 
-
-
-
-
-
-        "go", "quit", "help", "grab", "forward ", "kick", "slash", "run", "stay", "still", "cut", "kill", "throw"
-
->>>>>>> FETCH_HEAD
     };
     
 
