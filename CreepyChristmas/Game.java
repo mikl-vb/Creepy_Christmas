@@ -316,7 +316,7 @@ public class Game
         System.out.println("Thank you for playing. Good bye.");
     }
 
-<<<<<<< HEAD
+
 
 
 
@@ -326,8 +326,8 @@ public class Game
         
 
 
-=======
->>>>>>> FETCH_HEAD
+
+
 
     public void playWithFileInput1() 
     {            
@@ -460,13 +460,13 @@ public class Game
             if(command.getSecondWord().equals("put"))
             {
                 playerDeath();
-<<<<<<< HEAD
+
                 
 
                 System.out.println("You're starting to feel light headed until you're getting higher and higher...... unitl wait.....");
-=======
+
                 System.out.println("You caught rabies...");
->>>>>>> FETCH_HEAD
+
                 wantToQuit = true;
                 return wantToQuit;
             }
