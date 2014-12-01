@@ -85,10 +85,10 @@ public class Boss
         playerHealth.reduceHealth();
         System.out.println("That hurt...Your health has dropped by 1!");
 
-        if(playerHealth.getHealth() < 1)
-        {
-            Game.playerDeath();
-        }
+        //if(playerHealth.getHealth() < 1)
+        //{
+          //  Game.playerDeath();
+        //}
 
     }
 

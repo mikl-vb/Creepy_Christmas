@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Game()
-comment0.text=\r\n\ Create\ the\ game\ and\ initialise\ its\ internal\ map.\r\n
+comment0.text=\n\ Create\ the\ game\ and\ initialise\ its\ internal\ map.\n
 comment1.params=
 comment1.target=void\ createObjects()
 comment1.text=\r\n\ create\ objects\r\n
@@ -20,7 +20,11 @@ comment14.params=
 comment14.target=boolean\ playerDeath()
 comment2.params=
 comment2.target=void\ createRooms()
+<<<<<<< HEAD
 comment2.text=\r\n\ Create\ all\ the\ rooms\ and\ link\ their\ exits\ together.\r\n
+=======
+comment2.text=\n\ Create\ all\ the\ rooms\ and\ link\ their\ exits\ together.\n
+>>>>>>> origin/master
 comment3.params=
 comment3.target=void\ play()
 comment3.text=\r\n\ \ Main\ play\ routine.\ \ Loops\ until\ end\ of\ play.\r\n
